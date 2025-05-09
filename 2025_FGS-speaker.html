@@ -1,0 +1,2025 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<script src="2025_FGS_files/libs/clipboard/clipboard.min.js"></script>
+<script src="2025_FGS_files/libs/quarto-html/tabby.min.js"></script>
+<script src="2025_FGS_files/libs/quarto-html/popper.min.js"></script>
+<script src="2025_FGS_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="2025_FGS_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="2025_FGS_files/libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="2025_FGS_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
+<link href="2025_FGS_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.5.54">
+
+  <meta name="author" content="Andrew Van Domelen">
+  <meta name="dcterms.date" content="2025-03-05">
+  <title>Uncovering the genetic relationship between dementia and age-related hearing loss</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="2025_FGS_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="2025_FGS_files/libs/revealjs/dist/reveal.css">
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="2025_FGS_files/libs/revealjs/dist/theme/quarto.css">
+  <link rel="stylesheet" href="seminar.css">
+  <link href="2025_FGS_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="2025_FGS_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="2025_FGS_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="2025_FGS_files/libs/revealjs/plugin/appearance/appearance.css" rel="stylesheet">
+  <link href="2025_FGS_files/libs/revealjs/plugin/reveal-pointer/pointer.css" rel="stylesheet">
+  <link href="2025_FGS_files/libs/revealjs/plugin/simplemenu/simplemenu.css" rel="stylesheet">
+  <link href="2025_FGS_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+
+  .callout {
+    margin-top: 1em;
+    margin-bottom: 1em;  
+    border-radius: .25rem;
+  }
+
+  .callout.callout-style-simple { 
+    padding: 0em 0.5em;
+    border-left: solid #acacac .3rem;
+    border-right: solid 1px silver;
+    border-top: solid 1px silver;
+    border-bottom: solid 1px silver;
+    display: flex;
+  }
+
+  .callout.callout-style-default {
+    border-left: solid #acacac .3rem;
+    border-right: solid 1px silver;
+    border-top: solid 1px silver;
+    border-bottom: solid 1px silver;
+  }
+
+  .callout .callout-body-container {
+    flex-grow: 1;
+  }
+
+  .callout.callout-style-simple .callout-body {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .callout.callout-style-default .callout-body {
+    font-size: 0.9rem;
+    font-weight: 400;
+  }
+
+  .callout.callout-titled.callout-style-simple .callout-body {
+    margin-top: 0.2em;
+  }
+
+  .callout:not(.callout-titled) .callout-body {
+      display: flex;
+  }
+
+  .callout:not(.no-icon).callout-titled.callout-style-simple .callout-content {
+    padding-left: 1.6em;
+  }
+
+  .callout.callout-titled .callout-header {
+    padding-top: 0.2em;
+    margin-bottom: -0.2em;
+  }
+
+  .callout.callout-titled .callout-title  p {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+    
+  .callout.callout-titled.callout-style-simple .callout-content  p {
+    margin-top: 0;
+  }
+
+  .callout.callout-titled.callout-style-default .callout-content  p {
+    margin-top: 0.7em;
+  }
+
+  .callout.callout-style-simple div.callout-title {
+    border-bottom: none;
+    font-size: .9rem;
+    font-weight: 600;
+    opacity: 75%;
+  }
+
+  .callout.callout-style-default  div.callout-title {
+    border-bottom: none;
+    font-weight: 600;
+    opacity: 85%;
+    font-size: 0.9rem;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+
+  .callout.callout-style-default div.callout-content {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+
+  .callout.callout-style-simple .callout-icon::before {
+    height: 1rem;
+    width: 1rem;
+    display: inline-block;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: 1rem 1rem;
+  }
+
+  .callout.callout-style-default .callout-icon::before {
+    height: 0.9rem;
+    width: 0.9rem;
+    display: inline-block;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: 0.9rem 0.9rem;
+  }
+
+  .callout-title {
+    display: flex
+  }
+    
+  .callout-icon::before {
+    margin-top: 1rem;
+    padding-right: .5rem;
+  }
+
+  .callout.no-icon::before {
+    display: none !important;
+  }
+
+  .callout.callout-titled .callout-body > .callout-content > :last-child {
+    padding-bottom: 0.5rem;
+    margin-bottom: 0;
+  }
+
+  .callout.callout-titled .callout-icon::before {
+    margin-top: .5rem;
+    padding-right: .5rem;
+  }
+
+  .callout:not(.callout-titled) .callout-icon::before {
+    margin-top: 1rem;
+    padding-right: .5rem;
+  }
+
+  /* Callout Types */
+
+  div.callout-note {
+    border-left-color: #4582ec !important;
+  }
+
+  div.callout-note .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAEU0lEQVRYCcVXTWhcVRQ+586kSUMMxkyaElstCto2SIhitS5Ek8xUKV2poatCcVHtUlFQk8mbaaziwpWgglJwVaquitBOfhQXFlqlzSJpFSpIYyXNjBNiTCck7x2/8/LeNDOZxDuEkgOXe++553zfefee+/OYLOXFk3+1LLrRdiO81yNqZ6K9cG0P3MeFaMIQjXssE8Z1JzLO9ls20MBZX7oG8w9GxB0goaPrW5aNMp1yOZIa7Wv6o2ykpLtmAPs/vrG14Z+6d4jpbSKuhdcSyq9wGMPXjonwmESXrriLzFGOdDBLB8Y6MNYBu0dRokSygMA/mrun8MGFN3behm6VVAwg4WR3i6FvYK1T7MHo9BK7ydH+1uurECoouk5MPRyVSBrBHMYwVobG2aOXM07sWrn5qgB60rc6mcwIDJtQrnrEr44kmy+UO9r0u9O5/YbkS9juQckLed3DyW2XV/qWBBB3ptvI8EUY3I9p/67OW+g967TNr3Sotn3IuVlfMLVnsBwH4fsnebJvyGm5GeIUA3jljERmrv49SizPYuq+z7c2H/jlGC+Ghhupn/hcapqmcudB9jwJ/3jvnvu6vu5lVzF1fXyZuZZ7U8nRmVzytvT+H3kilYvH09mLWrQdwFSsFEsxFVs5fK7A0g8gMZjbif4ACpKbjv7gNGaD8bUrlk8x+KRflttr22JEMRUbTUwwDQScyzPgedQHZT0xnx7ujw2jfVfExwYHwOsDTjLdJ2ebmeQIlJ7neo41s/DrsL3kl+W2lWvAga0tR3zueGr6GL78M3ifH0rGXrBC2aAR8uYcIA5gwV8zIE8onoh8u0Fca/ciF7j1uOzEnqcIm59sEXoGc0+z6+H45V1CvAvHcD7THztu669cnp+L0okAeIc6zjbM/24LgGM1gZk7jnRu1aQWoU9sfUOuhrmtaPIO3YY1KLLWZaEO5TKUbMY5zx8W9UJ6elpLwKXbsaZ4EFl7B4bMtDv0iRipKoDQT2sNQI9b1utXFdYisi+wzZ/ri/1m7QfDgEuvgUUEIJPq3DhX/5DWNqIXDOweC2wvIR90Oq3lDpdMIgD2r0dXvGdsEW5H6x6HLRJYU7C69VefO1x8Gde1ZFSJLfWS1jbCnhtOPxmpfv2LXOA2Xk2tvnwKKPFuZ/oRmwBwqRQDcKNeVQkYcOjtWVBuM/JuYw5b6isojIkYxyYAFn5K7ZBF10fea52y8QltAg6jnMqNHFBmGkQ1j+U43HMi2xMar1Nv0zGsf1s8nUsmUtPOOrbFIR8bHFDMB5zL13Gmr/kGlCkUzedTzzmzsaJXhYawnA3UmARpiYj5ooJZiUoxFRtK3X6pgNPv+IZVPcnwbOl6f+aBaO1CNvPW9n9LmCp01nuSaTRF2YxHqZ8DYQT6WsXT+RD6eUztwYLZ8rM+rcPxamv1VQzFUkzFXvkiVrySGQgJNvXHJAxiU3/NwiC03rSf05VBaPtu/Z7/B8Yn/w7eguloAAAAAElFTkSuQmCC');
+  }
+
+  div.callout-note.callout-style-default .callout-title {
+    background-color: #dae6fb
+  }
+
+  div.callout-important {
+    border-left-color: #d9534f !important;
+  }
+
+  div.callout-important .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAEKklEQVRYCcVXTWhcVRS+575MJym48A+hSRFr00ySRQhURRfd2HYjk2SSTokuBCkU2o0LoSKKraKIBTcuFCoidGFD08nkBzdREbpQ1EDNIv8qSGMFUboImMSZd4/f9zJv8ibJMC8xJQfO3HPPPef7zrvvvnvviIkpC9nsw0UttFunbUhpFzFtarSd6WJkStVMw5xyVqYTvkwfzuf/5FgtkVoB0729j1rjXwThS7Vio+Mo6DNnvLfahoZ+i/o32lULuJ3NNiz7q6+pyAUkJaFF6JwaM2lUJlV0MlnQn5aTRbEu0SEqHUa0A4AdiGuB1kFXRfVyg5d87+Dg4DL6m2TLAub60ilj7A1Ec4odSAc8X95sHh7+ZRPCFo6Fnp7HfU/fBng/hi10CjCnWnJjsxvDNxWw0NfV6Rv5GgP3I3jGWXumdTD/3cbEOP2ZbOZp69yniG3FQ9z1jD7bnBu9Fc2tKGC2q+uAJOQHBDRiZX1x36o7fWBs7J9ownbtO+n0/qWkvW7UPIfc37WgT6ZGR++EOJyeQDSb9UB+DZ1G6DdLDzyS+b/kBCYGsYgJbSQHuThGKRcw5xdeQf8YdNHsc6ePXrlSYMBuSIAFTGAtQo+VuALo4BX83N190NWZWbynBjhOHsmNfFWLeL6v+ynsA58zDvvAC8j5PkbOcXCMg2PZFk3q8MjI7WAG/Dp9AwP7jdGBOOQkAvlFUB+irtm16I1Zw9YBcpGTGXYmk3kQIC/Cds55l+iMI3jqhjAuaoe+am2Jw5GT3Nbz3CkE12NavmzN5+erJW7046n/CH1RO/RVa8lBLozXk9uqykkGAyRXLWlLv5jyp4RFsG5vGVzpDLnIjTWgnRy2Rr+tDKvRc7Y8AyZq10jj8DqXdnIRNtFZb+t/ZRtXcDiVnzpqx8mPcDWxgARUqx0W1QB9MeUZiNrV4qP+Ehc+BpNgATsTX8ozYKL2NtFYAHc84fG7ndxUPr+AR/iQSns7uSUufAymwDOb2+NjK27lEFocm/EE2WpyIy/Hi66MWuMKJn8RvxIcj87IM5Vh9663ziW36kR0HNenXuxmfaD8JC7tfKbrhFr7LiZCrMjrzTeGx+PmkosrkNzW94ObzwocJ7A1HokLolY+AvkTiD/q1H0cN48c5EL8Crkttsa/AXQVDmutfyku0E7jShx49XqV3MFK8IryDhYVbj7Sj2P2eBxwcXoe8T8idsKKPRcnZw1b+slFTubwUwhktrfnAt7J++jwQtLZcm3sr9LQrjRzz6cfMv9aLvgmnAGvpoaGLxM4mAEaLV7iAzQ3oU0IvD5x9ix3yF2RAAuYAOO2f7PEFWCXZ4C9Pb2UsgDeVnFSpbFK7/IWu7TPTvBqzbGdCHOJQSxiEjt6IyZmxQyEJHv6xyQsYk//moVFsN2zP6fRImjfq7/n/wFDguUQFNEwugAAAABJRU5ErkJggg==');
+  }
+
+  div.callout-important.callout-style-default .callout-title {
+    background-color: #f7dddc
+  }
+
+  div.callout-warning {
+    border-left-color: #f0ad4e !important;
+  }
+
+  div.callout-warning .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAETklEQVRYCeVWW2gcVRg+58yaTUnizqbipZeX4uWhBEniBaoUX1Ioze52t7sRq6APio9V9MEaoWlVsFasRq0gltaAPuxms8lu0gcviE/FFOstVbSIxgcv6SU7EZqmdc7v9+9mJtNks51NTUH84ed889/PP+cmxP+d5FIbMJmNbpREu4WUkiTtCicKny0l1pIKmBzovF2S+hIJHX8iEu3hZJ5lNZGqyRrGSIQpq15AzF28jgpeY6yk6GVdrfFqdrD6Iw+QlB8g0YS2g7dyQmXM/IDhBhT0UCiRf59lfqmmDvzRt6kByV/m4JjtzuaujMUM2c5Z2d6JdKrRb3K2q6mA+oYVz8JnDdKPmmNthzkAk/lN63sYPgevrguc72aZX/L9C6x09GYyxBgCX4NlvyGUHOKELlm5rXeR1kchuChJt4SSwyddZRXgvwMGvYo4QSlk3/zkHD8UHxwVJA6zjZZqP8v8kK8OWLnIZtLyCAJagYC4rTGW/9Pqj92N/c+LUaAj27movwbi19tk/whRCIE7Q9vyI6yvRpftAKVTdUjOW40X3h5OXsKCdmFcx0xlLJoSuQngnrJe7Kcjm4OMq9FlC7CMmScQANuNvjfP3PjGXDBaUQmbp296S5L4DrpbrHN1T87ZVEZVCzg1FF0Ft+dKrlLukI+/c9ENo+TvlTDbYFvuKPtQ9+l052rXrgKoWkDAFnvh0wTOmYn8R5f4k/jN/fZiCM1tQx9jQQ4ANhqG4hiL0qIFTGViG9DKB7GYzgubnpofgYRwO+DFjh0Zin2m4b/97EDkXkc+f6xYAPX0KK2I/7fUQuwzuwo/L3AkcjugPNixC8cHf0FyPjWlItmLxWw4Ou9YsQCr5fijMGoD/zpdRy95HRysyXA74MWOnscpO4j2y3HAVisw85hX5+AFBRSHt4ShfLFkIMXTqyKFc46xdzQM6XbAi702a7sy04J0+feReMFKp5q9esYLCqAZYw/k14E/xcLLsFElaornTuJB0svMuJINy8xkIYuL+xPAlWRceH6+HX7THJ0djLUom46zREu7tTkxwmf/FdOZ/sh6Q8qvEAiHpm4PJ4a/doJe0gH1t+aHRgCzOvBvJedEK5OFE5jpm4AGP2a8Dxe3gGJ/pAutug9Gp6he92CsSsWBaEcxGx0FHytmIpuqGkOpldqNYQK8cSoXvd+xLxXADw0kf6UkJNFtdo5MOgaLjiQOQHcn+A6h5NuL2s0qsC2LOM75PcF3yr5STuBSAcGG+meA14K/CI21HcS4LBT6tv0QAh8Dr5l93AhZzG5ZJ4VxAqdZUEl9z7WJ4aN+svMvwHHL21UKTd1mqvChH7/Za5xzXBBKrUcB0TQ+Ulgkfbi/H/YT5EptrGzsEK7tR1B7ln9BBwckYfMiuSqklSznIuoIIOM42MQO+QnduCoFCI0bpkzjCjddHPN/F+2Yu+sd9bKNpVwHhbS3LluK/0zgfwD0xYI5dXuzlQAAAABJRU5ErkJggg==');
+  }
+
+  div.callout-warning.callout-style-default .callout-title {
+    background-color: #fcefdc
+  }
+
+  div.callout-tip {
+    border-left-color: #02b875 !important;
+  }
+
+  div.callout-tip .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAADr0lEQVRYCe1XTWgTQRj9ZjZV8a9SPIkKgj8I1bMHsUWrqYLVg4Ue6v9BwZOxSYsIerFao7UiUryIqJcqgtpimhbBXoSCVxUFe9CTiogUrUp2Pt+3aUI2u5vdNh4dmMzOzHvvezuz8xNFM0mjnbXaNu1MvFWRXkXEyE6aYOYJpdW4IXuA4r0fo8qqSMDBU0v1HJUgVieAXxzCsdE/YJTdFcVIZQNMyhruOMJKXYFoLfIfIvVIMWdsrd+Rpd86ZmyzzjJmLStqRn0v8lzkb4rVIXvnpScOJuAn2ACC65FkPzEdEy4TPWRLJ2h7z4cArXzzaOdKlbOvKKX25Wl00jSnrwVxAg3o4dRxhO13RBSdNvH0xSARv3adTXbBdTf64IWO2vH0LT+cv4GR1DJt+DUItaQogeBX/chhbTBxEiZ6gftlDNXTrvT7co4ub5A6gp9HIcHvzTa46OS5fBeP87Qm0fQkr4FsYgVQ7Qg+ZayaDg9jhg1GkWj8RG6lkeSacrrHgDaxdoBiZPg+NXV/KifMuB6//JmYH4CntVEHy/keA6x4h4CU5oFy8GzrBS18cLJMXcljAKB6INjWsRcuZBWVaS3GDrqB7rdapVIeA+isQ57Eev9eCqzqOa81CY05VLd6SamW2wA2H3SiTbnbSxmzfp7WtKZkqy4mdyAlGx7ennghYf8voqp9cLSgKdqNfa6RdRsAAkPwRuJZNbpByn+RrJi1RXTwdi8RQF6ymDwGMAtZ6TVE+4uoKh+MYkcLsT0Hk8eAienbiGdjJHZTpmNjlbFJNKDVAp2fJlYju6IreQxQ08UJDNYdoLSl6AadO+fFuCQqVMB1NJwPm69T04Wv5WhfcWyfXQB+wXRs1pt+nCknRa0LVzSA/2B+a9+zQJadb7IyyV24YAxKp2Jqs3emZTuNnKxsah+uabKbMk7CbTgJx/zIgQYErIeTKRQ9yD9wxVof5YolPHqaWo7TD6tJlh7jQnK5z2n3+fGdggIOx2kaa2YI9QWarc5Ce1ipNWMKeSG4DysFF52KBmTNMmn5HqCFkwy34rDg05gDwgH3bBi+sgFhN/e8QvRn8kbamCOhgrZ9GJhFDgfcMHzFb6BAtjKpFhzTjwv1KCVuxHvCbsSiEz4CANnj84cwHdFXAbAOJ4LTSAawGWFn5tDhLMYz6nWeU2wJfIhmIJBefcd/A5FWQWGgrWzyORZ3Q6HuV+Jf0Bj+BTX69fm1zWgK7By1YTXchFDORywnfQ7GpzOo6S+qECrsx2ifVQAAAABJRU5ErkJggg==');
+  }
+
+  div.callout-tip.callout-style-default .callout-title {
+    background-color: #ccf1e3
+  }
+
+  div.callout-caution {
+    border-left-color: #fd7e14 !important;
+  }
+
+  div.callout-caution .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAACV0lEQVRYCdVWzWoUQRCuqp2ICBLJXgITZL1EfQDBW/bkzUMUD7klD+ATSHBEfAIfQO+iXsWDxJsHL96EHAwhgzlkg8nBg25XWb0zIb0zs9muYYWkoKeru+vn664fBqElyZNuyh167NXJ8Ut8McjbmEraKHkd7uAnAFku+VWdb3reSmRV8PKSLfZ0Gjn3a6Xlcq9YGb6tADjn+lUfTXtVmaZ1KwBIvFI11rRXlWlatwIAAv2asaa9mlB9wwygiDX26qaw1yYPzFXg2N1GgG0FMF8Oj+VIx7E/03lHx8UhvYyNZLN7BwSPgekXXLribw7w5/c8EF+DBK5idvDVYtEEwMeYefjjLAdEyQ3M9nfOkgnPTEkYU+sxMq0BxNR6jExrAI31H1rzvLEfRIdgcv1XEdj6QTQAS2wtstEALLG1yEZ3QhH6oDX7ExBSFEkFINXH98NTrme5IOaaA7kIfiu2L8A3qhH9zRbukdCqdsA98TdElyeMe5BI8Rs2xHRIsoTSSVFfCFCWGPn9XHb4cdobRIWABNf0add9jakDjQJpJ1bTXOJXnnRXHRf+dNL1ZV1MBRCXhMbaHqGI1JkKIL7+i8uffuP6wVQAzO7+qVEbF6NbS0LJureYcWXUUhH66nLR5rYmva+2tjRFtojkM2aD76HEGAD3tPtKM309FJg5j/K682ywcWJ3PASCcycH/22u+Bh7Aa0ehM2Fu4z0SAE81HF9RkB21c5bEn4Dzw+/qNOyXr3DCTQDMBOdhi4nAgiFDGCinIa2owCEChUwD8qzd03PG+qdW/4fDzjUMcE1ZpIAAAAASUVORK5CYII=');
+  }
+
+  div.callout-caution.callout-style-default .callout-title {
+    background-color: #ffe5d0
+  }
+
+  </style>
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" data-state="hide-menubar" class="quarto-title-block center">
+  <h1 class="title">Uncovering the genetic relationship between dementia and age-related hearing loss</h1>
+
+<div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+Andrew Van Domelen 
+</div>
+<div class="quarto-title-author-email">
+<a href="mailto:vandomea@myumanitoba.ca">vandomea@myumanitoba.ca</a>
+</div>
+        <p class="quarto-title-affiliation">
+            University of Manitoba, Department of Biochemistry and Medical Genetics
+          </p>
+    </div>
+</div>
+
+  <p class="date">2025-03-05</p>
+</section>
+<section id="what-is-dementia" class="slide level2" data-name="Background" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">What is dementia?</h2>
+<h3 style="color: gray; font-size: 23pt !important;" id="a-common-neurodegenerative-disorder">A common neurodegenerative disorder</h3>
+<div class="fragment fade-in" data-fragment-index="1">
+<div class="fragment semi-fade-out" data-fragment-index="3">
+<p>Symptoms</p>
+</div>
+</div>
+<div class="fragment fade-in" data-fragment-index="3">
+<p>Demographics</p>
+</div>
+<div class="fragment slide-in-from-top" data-id="brain" data-fragment-index="1" style="position: absolute; top: 45%; left: 50%; width: 275px; height: auto;">
+<p><img data-src="img/dem/brain.png"></p>
+</div>
+<div class="fragment slide-in-from-bottom-then-top" data-fragment-index="1" style="position: absolute; left: 78%; top: 48%; width: 200px; height: auto;">
+<p><img data-src="img/dem/dem_mem.png" data-id="cog1"></p>
+</div>
+<div class="fragment slide-in-from-bottom-then-top" data-fragment-index="1" style="position: absolute; left: 29%; top: 48%; width: 200px; height: auto;">
+<p><img data-src="img/dem/dem_com.png" data-id="cog2"></p>
+</div>
+<div class="fragment slide-in-from-bottom-then-top" data-fragment-index="1" style="position: absolute; left: 39%; top: 20%; width: 200px; height: auto;">
+<p><img data-src="img/dem/dem_coord.png" data-id="cog3"></p>
+</div>
+<div class="fragment slide-in-from-bottom-then-top" data-fragment-index="1" style="position: absolute; left: 67%; top: 20%; width: 200px; height: auto;">
+<p><img data-src="img/dem/dem_disor.png" data-id="cog4"></p>
+</div>
+<div class="fragment slide-in-from-bottom-then-top" data-fragment-index="2" style="position: absolute; left: 78%; top: 48%; width: 200px; height: auto;">
+<p><img data-src="img/dem/dem_pers.png" data-id="psych1"></p>
+</div>
+<div class="fragment slide-in-from-bottom-then-top" data-fragment-index="2" style="position: absolute; left: 29%; top: 48%; width: 200px; height: auto;">
+<p><img data-src="img/dem/dem_dep.png" data-id="psych2"></p>
+</div>
+<div class="fragment slide-in-from-bottom-then-top" data-fragment-index="2" style="position: absolute; left: 39%; top: 20%; width: 200px; height: auto;">
+<p><img data-src="img/dem/dem_anx.png" data-id="psych3"></p>
+</div>
+<div class="fragment slide-in-from-bottom-then-top" data-fragment-index="2" style="position: absolute; left: 67%; top: 20%; width: 200px; height: auto;">
+<p><img data-src="img/dem/dem_par.png" data-id="psych4"></p>
+</div>
+<div class="fragment fade-in" data-fragment-index="3" style="position: absolute; left: 78%; top: 38%; width: 265px; height: auto;">
+<p><img data-src="img/dem/dem_demo_sex.png" data-auto-animate-id="demogr1"></p>
+</div>
+<div class="fragment fade-in" data-fragment-index="3" style="position: absolute; left: 17%; top: 38%; width: 350px; height: auto;">
+<p><img data-src="img/dem/dem_demo_eth.png" data-auto-animate-id="demogr2"></p>
+</div>
+<div class="fragment fade-in" data-fragment-index="3" style="position: absolute; left: 51%; top: 9%; width: 250px; height: auto;">
+<p><img data-src="img/dem/dem_demo_age.png" data-auto-animate-id="demogr3"></p>
+</div>
+<div data-id="subtype1" style="position: absolute; left: 300px; top: -4000px; width: 950px; height: auto;">
+<p><img data-src="img/dem/dem_sub_umb.png"></p>
+</div>
+<div data-id="subtype2" style="position: absolute; left: 300px; top: 6000px; width: 950px; height: auto;">
+<p><img data-src="img/dem/dem_sub_text.png"></p>
+</div>
+</section>
+<section id="what-is-dementia-1" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">What is dementia?</h2>
+<h3 style="color: gray; font-size: 23pt !important;" id="a-common-neurodegenerative-disorder-1">A common neurodegenerative disorder</h3>
+<div style="opacity: 50%;">
+<p>Symptoms</p>
+<p>Demographics</p>
+</div>
+<p>Subtypes</p>
+<div data-id="subtype1" style="position: absolute; left: 23%; top: 0px; width: 950px; height: auto;">
+<p><img data-src="img/dem/dem_sub_umb.png"></p>
+</div>
+<div data-id="subtype2" style="position: absolute; left: 23%; top: 0px; width: 950px; height: auto;">
+<p><img data-src="img/dem/dem_sub_text_2.png"></p>
+</div>
+</section>
+<section id="what-is-dementia-2" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">What is dementia?</h2>
+<h3 style="color: gray; font-size: 23pt !important;" id="a-common-neurodegenerative-disorder-2">A common neurodegenerative disorder</h3>
+<div style="opacity: 50%;">
+<p>Symptoms</p>
+<p>Demographics</p>
+<p>Subtypes</p>
+</div>
+<p>Pathologies</p>
+<div class="dementia-text-box" style="text-align: center; background: #385E9D; color: white; position: absolute; top: 50px; left: 600px; width: 450px; padding: 0.1em;">
+<p>PROTEIN AGGREGATES</p>
+<p>(tau, amyloids, others)</p>
+</div>
+<div class="fragment fade-in-then-out" data-fragment-index="1" data-id="amyloid-salahuddin" style="position: absolute; left: 400px; top: 200px; width: 950px; height: auto;">
+<p><img data-src="img/dem/amyloids.jpeg"></p>
+</div>
+<div class="fragment fade-in dementia-text-box" data-fragment-index="2" style="text-align: center;  background: #385E9D; color: white; position: absolute; top: 205px; left: 600px; width: 450px; padding: 0.1em;">
+<p>LOSS OF NEURONS and SYNAPSE CONNECTIONS</p>
+</div>
+<div class="fragment fade-in dementia-text-box" data-fragment-index="3" style="text-align: center; background: #385E9D; color: white; position: absolute; top: 350px; left: 600px; width: 450px; padding: 0.1em;">
+<p>CHRONIC INFLAMMATION</p>
+</div>
+<div class="fragment fade-in dementia-text-box" data-fragment-index="4" style="text-align: center; background: #385E9D; color: white; position: absolute; top: 445px; left: 600px; width: 450px; padding: 0.1em;">
+<p>GENETICS</p>
+</div>
+</section>
+<section id="what-are-the-risk-factors-for-dementia" class="slide level2 scrollable">
+<h2><span style="font-size: 35pt;">What are the <span style="color: var(--lab-blue);">risk factors</span> for dementia?</span></h2>
+<h3 id="global">(<a href="https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(24)01296-0/fulltext" target="_blank">Global</a>)</h3>
+<div class="fragment fade-in-then-out" data-fragment-index="1" style="position: absolute; left: 200px; top: 100px; width: 750px; height: auto;">
+<p><img data-src="img/dem/dem_lancet.jpg"></p>
+<div data-id="4em-space" style="display:inline-block; height:4em;">
+
+</div>
+</div>
+<div class="fragment fade-in" data-fragment-index="2" style="position: absolute; left: 200px; top: 100px; width: 750px; height: auto;">
+<p><img data-src="img/dem/dem_lancet_hl.jpeg"></p>
+<div data-id="4em-space" style="display:inline-block; height:4em;">
+
+</div>
+</div>
+</section>
+<section id="what-are-the-risk-factors-for-dementia-1" class="slide level2 scrollable">
+<h2><span style="font-size: 35pt;">What are the <span style="color: var(--lab-blue);">risk factors</span> for dementia?</span></h2>
+<h3 id="canada">(<a href="https://www.sciencedirect.com/science/article/pii/S2274580724006800?via%3Dihub" target="_blank">Canada</a>)</h3>
+<div class="fragment fade-in-then-out" data-fragment-index="1" style="position: absolute; left: 150px; top: 100px; width: 850px; height: auto;">
+<p><img data-src="img/dem/dem_son.jpg"></p>
+<div data-id="4em-space" style="display:inline-block; height:4em;">
+
+</div>
+</div>
+<div class="fragment fade-in" data-fragment-index="2" style="position: absolute; left: 150px; top: 100px; width: 850px; height: auto;">
+<p><img data-src="img/dem/dem_son_hl.jpg"></p>
+<div data-id="4em-space" style="display:inline-block; height:4em;">
+
+</div>
+</div>
+</section>
+<section id="how-are-hearing-loss-and-dementia-connected" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">How are hearing loss and dementia connected?</h2>
+<div class="columns">
+<div class="column fragment fade-in-then-out" data-fragment-index="1" style="position: absolute; left: 0%;">
+<p><span data-auto-animate-id="cause" style="font-size: 35pt; color: var(--lab-blue);"><strong>Causal Relationship</strong></span></p>
+</div><div class="column fragment fade-in" data-fragment-index="2" style="position: absolute; left: 0%;">
+<p><span data-auto-animate-id="mediate" style="font-size: 35pt; color: var(--lab-blue);"><strong>Common Cause</strong></span></p>
+</div></div>
+<div class="fragment fade-in-then-out slow1" data-fragment-index="1" style="position: absolute; top: 265px; left: 25%; width: 750px;">
+<p><img data-src="img/arhl-dem/causal.png"></p>
+</div>
+<div class="fragment fade-in-then-out slow1" data-fragment-index="2" style="position: absolute; top: 175px; left: 45%; width: 400px;">
+<p><img data-src="img/arhl-dem/mediate.png"></p>
+</div>
+<div data-id="causal-sml" style="position: absolute; top: -103%; left: 86%; width: 200px; opacity: 0.5;">
+<p><img data-src="img/arhl-dem/causal.png"></p>
+</div>
+</section>
+<section id="can-hearing-loss-cause-dementia" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title"><span style="font-size: 45pt;">Can hearing loss <span style="color: var(--lab-blue);">cause</span> dementia?</span></h2>
+<div data-id="causal-sml" style="position: absolute; top: -3%; left: 86%; width: 200px; opacity: 0.5;">
+<p><img data-src="img/arhl-dem/causal.png"></p>
+</div>
+<div class="fragment fade-in" data-fragment-index="1">
+<div class="fragment semi-fade-out" data-fragment-index="3">
+<p>Altered cognitive load</p>
+</div>
+</div>
+<div class="fragment fade-in-then-semi-out" data-fragment-index="3">
+<p>Neuroplastic reorganization</p>
+</div>
+<div class="fragment fade-in" data-fragment-index="4" style="width: 800px; color: var(--lab-yellow);">
+<p><span style="font-size:45pt;"><strong>Can we use genetics to explore causality?</strong></span></p>
+</div>
+<div class="fragment fade-in-then-out slow1" data-fragment-index="1" style="position: absolute; top: 125px; left: 450px;">
+<p><img data-src="img/MR/cog_load1.jpeg" style="width:400px;"></p>
+</div>
+<div class="fragment fade-in-then-out slow1" data-fragment-index="2" style="position: absolute; top: 125px; left: 450px;">
+<p><img data-src="img/MR/cog_load.jpg" style="width:400px;"></p>
+</div>
+<div class="fragment fade-in-then-out slow1" data-fragment-index="3" style="position: absolute; top: 100px; left: 550px;">
+<p><img data-src="img/dem/brain_sens.png" style="width:500px;"></p>
+</div>
+</section>
+<section id="mendelian-randomization-mr-to-explore-causality" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title"><span style="font-size: 35pt;">Mendelian Randomization (<span style="color: var(--lab-blue);">MR</span>) to explore <span style="color: var(--lab-blue);">causality</span></span></h2>
+<div class="fragment fade-out" data-fragment-index="1">
+<div style="position: absolute; top: 25px; left: 20px; width: 1000px;">
+<p><img data-src="img/MR/mr1.png"></p>
+</div>
+<div style="position: absolute; top: 200px; left: 425px; width: 225px;">
+<p><img data-src="img/MR/ARHL.png"></p>
+</div>
+<div style="position: absolute; top: 225px; left: 750px; width: 225px;">
+<p><img data-src="img/MR/dem_brain.png"></p>
+</div>
+</div>
+<div class="fragment fade-in-then-out" data-fragment-index="1" style="position: absolute; top: 0px; left: 50px; width: 1000px;">
+<p><img data-src="img/MR/mr2.png"></p>
+</div>
+<div class="fragment fade-in-then-out" data-fragment-index="2" style="position: absolute; top: 0px; left: 50px; width: 1000px;">
+<p><img data-src="img/MR/mr3.png"></p>
+</div>
+<div class="fragment fade-in-then-out" data-fragment-index="3" style="position: absolute; top: 0px; left: 50px; width: 1000px;">
+<p><img data-src="img/MR/mr4.png"></p>
+</div>
+<div class="fragment fade-in-then-out" data-fragment-index="4" style="position: absolute; top: 0px; left: 50px; width: 1000px;">
+<p><img data-src="img/MR/mr5.png"></p>
+</div>
+<div class="fragment fade-in-then-out" data-fragment-index="5" style="position: absolute; top: 0px; left: 50px; width: 1000px;">
+<p><img data-src="img/MR/mr6.png"></p>
+</div>
+<div class="fragment fade-in-then-out" data-fragment-index="6" style="position: absolute; top: 0px; left: 50px; width: 1000px;">
+<p><img data-src="img/MR/mr7.png"></p>
+</div>
+<div class="fragment fade-in" data-fragment-index="7">
+<div style="position: absolute; top: 25px; left: 20px; width: 1000px;">
+<p><img data-src="img/MR/mr1.png"></p>
+</div>
+<div style="position: absolute; top: 200px; left: 425px; width: 225px;">
+<p><img data-src="img/MR/ARHL.png"></p>
+</div>
+<div style="position: absolute; top: 225px; left: 750px; width: 225px;">
+<p><img data-src="img/MR/dem_brain.png"></p>
+</div>
+</div>
+<div data-id="mediate" style="position: absolute; top: -100%; left: 50%; width: 125px; opacity: 0.5;">
+<p><img data-src="img/arhl-dem/mediate.png"></p>
+</div>
+</section>
+<section id="do-hearing-loss-and-dementia-share-a-common-cause" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Do hearing loss and dementia share a <span style="color: var(--lab-blue);">common cause</span>?</h2>
+<div class="fragment fade-in" data-fragment-index="1">
+<p>Inflammation</p>
+</div>
+<div class="fragment fade-in" data-fragment-index="2">
+<p>Poor Vascular Health</p>
+</div>
+<div class="fragment fade-in" data-fragment-index="3">
+<p>Protein Aggregates</p>
+</div>
+<div class="fragment fade-in" data-fragment-index="4">
+<p>Loss of Neurons/Synapses</p>
+</div>
+<div class="fragment fade-in" data-fragment-index="5">
+<p>Genetic Factors</p>
+</div>
+<div data-id="mediate" style="position: absolute; top: 6%; left: 50%; width: 125px; opacity: 0.5;">
+<p><img data-src="img/arhl-dem/mediate.png"></p>
+</div>
+<div class="fragment fade-in" data-fragment-index="1" style="position: absolute; top: 23%; left: 43%; width: 525px;">
+<div class="fragment fade-out" data-fragment-index="6">
+<p><img data-src="img/mtag/common.png"></p>
+</div>
+</div>
+<div class="fragment fade-in" data-fragment-index="6" style="position: absolute; top: 34%; left: 47%; width: 500px; color: var(--lab-yellow); text-align: center;">
+<p><span style="font-size:50pt;"><strong>Can we use genetics to find a common cause?</strong></span></p>
+</div>
+</section>
+<section id="mtag-to-find-a-common-cause" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title"><span style="font-size: 35pt;"><span style="color: var(--lab-blue);">MTAG</span> to find a <span style="color: var(--lab-blue);">common cause</span></span></h2>
+<h3 style="color: gray;" id="multi-trait-analysis-of-gwas">(Multi-Trait Analysis of GWAS)</h3>
+<div data-id="mtag1" style="position: absolute; top: 150px; left: 25px; width: 1000px;">
+<p><img data-src="img/mtag/mtag1.png"></p>
+</div>
+<div style="position: absolute; top: 120px; left: 2500px; width: 500px;" data-id="mtag">
+<p><img data-src="img/mtag/mtag2.png"></p>
+</div>
+</section>
+<section id="mtag-to-find-a-common-cause-1" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title"><span style="font-size: 35pt;"><span style="color: var(--lab-blue);">MTAG</span> to find a <span style="color: var(--lab-blue);">common cause</span></span></h2>
+<h3 style="color: gray;" id="multi-trait-analysis-of-gwas-1">(Multi-Trait Analysis of GWAS)</h3>
+<div data-id="mtag1" style="position: absolute; top: 20%; left: 0%; width: 450px;">
+<p><img data-src="img/mtag/mtag1.png"></p>
+</div>
+<div style="position: absolute; top: 120px; left: 500px; width: 500px;" data-id="mtag">
+<p><img data-src="img/mtag/mtag2.png"></p>
+</div>
+<div style="position: absolute; top: 153%; left: 154%; width: 400px;" data-id="fine-map">
+<p><img data-src="img/mtag/fine-map.png"></p>
+</div>
+</section>
+
+<section id="mtag-to-find-a-common-cause-3" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title"><span style="font-size: 35pt;"><span style="color: var(--lab-blue);">MTAG</span> to find a <span style="color: var(--lab-blue);">common cause</span></span></h2>
+<h3 style="color: gray;" id="multi-trait-analysis-of-gwas-3">(Multi-Trait Analysis of GWAS)</h3>
+<div style="width: 400px;">
+<ul>
+<li>Fine-mapping</li>
+<li>Enrichment Analysis</li>
+</ul>
+</div>
+<div style="position: absolute; top: 120px; left: 500px; width: 500px; opacity: 0.2;" data-id="mtag">
+<p><img data-src="img/mtag/mtag2.png"></p>
+</div>
+<div style="position: absolute; top: 23%; left: 54%; width: 400px;" data-id="fine-map">
+<p><img data-src="img/mtag/fine-map.png"></p>
+</div>
+</section>
+<section id="no-clear-consensus-on-genetic-relationship" class="slide level2">
+<h2><span style="font-size:30pt;"><span style="color: var(--lab-blue);">No clear consensus</span> on genetic relationship</span></h2>
+<div class="fragment fade-out" data-fragment-index="1" style="position: absolute; top: 75px; left: 0px;">
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px !important;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px !important;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top; font-size:12pt !important;}
+</style>
+<table class="tg"><thead>
+  <tr>
+    <th class="tg-0pky">Paper</th>
+    <th class="tg-0pky">Study Design</th>
+    <th class="tg-0pky">Sample Size</th>
+    <th class="tg-0pky">Population</th>
+    <th class="tg-0pky">Hearing Loss Phenotype</th>
+    <th class="tg-0pky">Cog. Phenotype</th>
+    <th class="tg-0pky">Finding</th>
+  </tr></thead>
+<tbody>
+  <tr>
+    <td class="tg-0pky">Mitchell 2020</td>
+    <td class="tg-0pky">GWAS, MR, PGS</td>
+    <td class="tg-0pky">250k</td>
+    <td class="tg-0pky">European</td>
+    <td class="tg-0pky">Self-reported Hearing Difficulty</td>
+    <td class="tg-0pky">Clinical Diagnosis, 'AD-by-Proxy'</td>
+    <td class="tg-0pky">No Causal Effect, AD PGS predicts H. Diff.</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Brenowitz 2020</td>
+    <td class="tg-0pky">MR, PGS</td>
+    <td class="tg-0pky">245k</td>
+    <td class="tg-0pky">European</td>
+    <td class="tg-0pky">Digital Triplet Test, Self-report</td>
+    <td class="tg-0pky">Verbal Reasoning test score, AD PGS (based on 25 genetic loci)</td>
+    <td class="tg-0pky">Association between AD PGS and poor speech-in-noise hearing, No Association between Hearing PGS and cognitive scores.</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Xu 2024</td>
+    <td class="tg-0pky">MR, Cross-sectional Study</td>
+    <td class="tg-0pky">500k</td>
+    <td class="tg-0pky">European and Chinese</td>
+    <td class="tg-0pky">Self-report, Audiometry</td>
+    <td class="tg-0pky">Battery of Cognitive Tests</td>
+    <td class="tg-0pky">Hearing Loss is a risk factor for cognitive impairment</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Wang 2022</td>
+    <td class="tg-0pky">PGS, cross-sectional and longitudinal analysis</td>
+    <td class="tg-0pky">500k</td>
+    <td class="tg-0pky">European and Chinese</td>
+    <td class="tg-0pky">Self-report, Speech-in-Noise Test</td>
+    <td class="tg-0pky">Battery of Cognitive Tests, Imaging Data, cerebrospinal fluid Protein levels (tau, amyloid-beta)</td>
+    <td class="tg-0pky">Hearing Impairment is associated with cognitive decline, brain atrophy, and tau levels</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Abidin 2021</td>
+    <td class="tg-0pky">MR, Gene-set and function enrichment</td>
+    <td class="tg-0pky">250k</td>
+    <td class="tg-0pky">European</td>
+    <td class="tg-0pky">Self-report</td>
+    <td class="tg-0pky">Clinical Diagnosis</td>
+    <td class="tg-0pky">No Genetic Correlation, Possible causal relationship from AD to HL via APOE locus</td>
+  </tr>
+  <!-- made here: https://www.tablesgenerator.com/html_tables -->
+  
+  </tbody><tfoot>
+    <tr>
+      <td colspan="7" style="text-align:left; padding-top: 10px; font-size: 12pt">
+        <strong>Acronyms:</strong> <strong>AD</strong> = Alzheimer's Disease; <strong>GWAS</strong> = Genome-Wide Association Study; ; <strong>HL</strong> = Hearing Loss; <strong>MR</strong> = Mendelian Randomization; <strong>PGS</strong> = Polygenic Score.
+      </td>
+    </tr>
+</tfoot>
+
+
+</table>
+
+
+</div>
+<div class="fragment fade-in-then-out" data-fragment-index="1" style="position: absolute; top: 75px; left: 0px;">
+
+<!-- colored in "Finding" cells -->
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px !important;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px !important;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top; font-size: 12pt !important;}
+</style>
+<table class="tg"><thead>
+  <tr>
+    <th class="tg-0pky">Paper</th>
+    <th class="tg-0pky">Study Design</th>
+    <th class="tg-0pky">Sample Size</th>
+    <th class="tg-0pky">Population</th>
+    <th class="tg-0pky">Hearing Loss Phenotype</th>
+    <th class="tg-0pky">Cog. Phenotype</th>
+    <th class="tg-0pky">Finding</th>
+  </tr></thead>
+<tbody>
+  <tr>
+    <td class="tg-0pky">Mitchell 2020</td>
+    <td class="tg-0pky">GWAS, MR, PGS</td>
+    <td class="tg-0pky">250k</td>
+    <td class="tg-0pky">European</td>
+    <td class="tg-0pky">Self-reported Hearing Difficulty</td>
+    <td class="tg-0pky">Clinical Diagnosis, 'AD-by-Proxy'</td>
+    <td class="tg-0pky" style="background: #ffffa0;">No Causal Effect, AD PGS predicts H. Diff.</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Brenowitz 2020</td>
+    <td class="tg-0pky">MR, PGS</td>
+    <td class="tg-0pky">245k</td>
+    <td class="tg-0pky">European</td>
+    <td class="tg-0pky">Digital Triplet Test, Self-report</td>
+    <td class="tg-0pky">Verbal Reasoning test score, AD PGS (based on 25 genetic loci)</td>
+    <td class="tg-0pky" style="background: #ffffa0;">Association between AD PGS and poor speech-in-noise hearing, No Association between Hearing PGS and cognitive scores.</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Xu 2024</td>
+    <td class="tg-0pky">MR, Cross-sectional Study</td>
+    <td class="tg-0pky">500k</td>
+    <td class="tg-0pky">European and Chinese</td>
+    <td class="tg-0pky">Self-report, Audiometry</td>
+    <td class="tg-0pky">Battery of Cognitive Tests</td>
+    <td class="tg-0pky" style="background: #c3f78c;">Hearing Loss is a risk factor for cognitive impairment</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Wang 2022</td>
+    <td class="tg-0pky">PGS, cross-sectional and longitudinal analysis</td>
+    <td class="tg-0pky">500k</td>
+    <td class="tg-0pky">European and Chinese</td>
+    <td class="tg-0pky">Self-report, Speech-in-Noise Test</td>
+    <td class="tg-0pky">Battery of Cognitive Tests, Imaging Data, cerebrospinal fluid protein levels (tau, amyloid-beta)</td>
+    <td class="tg-0pky" style="background: #c3f78c;">Hearing Impairment is associated with cognitive decline, brain atrophy, and tau levels</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Abidin 2021</td>
+    <td class="tg-0pky">MR, Gene-set and function enrichment</td>
+    <td class="tg-0pky">250k</td>
+    <td class="tg-0pky">European</td>
+    <td class="tg-0pky">Self-report</td>
+    <td class="tg-0pky">Clinical Diagnosis</td>
+    <td class="tg-0pky" style="background: #ff8282;">No Genetic Correlation, Possible causal relationship from AD to HL via APOE locus</td>
+  </tr>
+  <!-- made here: https://www.tablesgenerator.com/html_tables -->
+  
+    </tbody><tfoot>
+    <tr>
+      <td colspan="7" style="text-align:left; padding-top: 10px; font-size: 12pt">
+        <strong>Acronyms:</strong> <strong>AD</strong> = Alzheimer's Disease; <strong>GWAS</strong> = Genome-Wide Association Study; ; <strong>HL</strong> = Hearing Loss; <strong>MR</strong> = Mendelian Randomization; <strong>PGS</strong> = Polygenic Score.
+      </td>
+    </tr>
+</tfoot>
+
+</table>
+
+
+</div>
+<div class="fragment fade-in" data-fragment-index="2" style="position: absolute; top: 75px; left: 0px;">
+<div class="fragment semi-fade-out" data-fragment-index="3">
+
+<!-- Highlighting Phenotypes -->
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px !important;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px !important;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top; font-size: 12pt !important;}
+</style>
+<table class="tg"><thead>
+  <tr>
+    <th class="tg-0pky">Paper</th>
+    <th class="tg-0pky">Study Design</th>
+    <th class="tg-0pky">Sample Size</th>
+    <th class="tg-0pky">Population</th>
+    <th class="tg-0pky">Hearing Loss Phenotype</th>
+    <th class="tg-0pky">Cog. Phenotype</th>
+    <th class="tg-0pky">Finding</th>
+  </tr></thead>
+<tbody>
+  <tr>
+    <td class="tg-0pky">Mitchell 2020</td>
+    <td class="tg-0pky">GWAS, MR, PGS</td>
+    <td class="tg-0pky">250k</td>
+    <td class="tg-0pky">European</td>
+    <td class="tg-0pky" style="background: #e5e4e0;">Self-reported Hearing Difficulty</td>
+    <td class="tg-0pky" style="background: #e5e4e0;">Clinical Diagnosis, 'AD-by-Proxy'</td>
+    <td class="tg-0pky" style="background: #ffffa0;">No Causal Effect, AD PGS predicts H. Diff.</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Brenowitz 2020</td>
+    <td class="tg-0pky">MR, PGS</td>
+    <td class="tg-0pky">245k</td>
+    <td class="tg-0pky">European</td>
+    <td class="tg-0pky" style="background: #e5e4e0;">Digital Triplet Test, Self-report</td>
+    <td class="tg-0pky" style="background: #e5e4e0;">Verbal Reasoning test score, AD PGS (based on 25 genetic loci)</td>
+    <td class="tg-0pky" style="background: #ffffa0;">Association between AD PGS and poor speech-in-noise hearing, No Association between Hearing PGS and cognitive scores.</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Xu 2024</td>
+    <td class="tg-0pky">MR, Cross-sectional Study</td>
+    <td class="tg-0pky">500k</td>
+    <td class="tg-0pky">European and Chinese</td>
+    <td class="tg-0pky" style="background: #e5e4e0;">Self-report, Audiometry</td>
+    <td class="tg-0pky" style="background: #e5e4e0;">Battery of Cognitive Tests</td>
+    <td class="tg-0pky" style="background: #c3f78c;">Hearing Loss is a risk factor for cognitive impairment</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Wang 2022</td>
+    <td class="tg-0pky">PGS, cross-sectional and longitudinal analysis</td>
+    <td class="tg-0pky">500k</td>
+    <td class="tg-0pky">European and Chinese</td>
+    <td class="tg-0pky" style="background: #e5e4e0;">Self-report, Speech-in-Noise Test</td>
+    <td class="tg-0pky" style="background: #e5e4e0;">Battery of Cognitive Tests, Imaging Data, cerebrospinal fluid Protein levels (tau, amyloid-beta)</td>
+    <td class="tg-0pky" style="background: #c3f78c;">Hearing Impairment is associated with cognitive decline, brain atrophy, and tau levels</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Abidin 2021</td>
+    <td class="tg-0pky">MR, Gene-set and function enrichment</td>
+    <td class="tg-0pky">250k</td>
+    <td class="tg-0pky">European</td>
+    <td class="tg-0pky" style="background: #e5e4e0;">Self-report</td>
+    <td class="tg-0pky" style="background: #e5e4e0;">Clinical Diagnosis</td>
+    <td class="tg-0pky" style="background: #ff8282;">No Genetic Correlation, Possible causal relationship from AD to HL via APOE locus</td>
+  </tr>
+  <!-- made here: https://www.tablesgenerator.com/html_tables -->
+  
+    </tbody><tfoot>
+    <tr>
+      <td colspan="7" style="text-align:left; padding-top: 10px; font-size: 12pt">
+        <strong>Acronyms:</strong> <strong>AD</strong> = Alzheimer's Disease; <strong>GWAS</strong> = Genome-Wide Association Study; ; <strong>HL</strong> = Hearing Loss; <strong>MR</strong> = Mendelian Randomization; <strong>PGS</strong> = Polygenic Score.
+      </td>
+    </tr>
+</tfoot>
+
+</table>
+
+
+</div>
+</div>
+<div class="fragment overview-text-box fade-in" data-fragment-index="3" style="color: white; background: var(--lab-yellow); position: absolute; top: 27%; left: 1%; width: 425px; padding-top: 0.1em;">
+<p><span style="text-decoration: underline;">Phenotypes</span></p>
+<div style="font-size:23pt; text-align: center; line-height: 3;">
+<ul>
+<li><p>Is “self-report” data objective?</p></li>
+<li><p>Hearing loss is heterogenous (causes, pathologies, etc.)</p></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="evidence-for-a-genetic-correlation-between-specific-hearing-loss-subtypes-and-dementia" class="slide level2">
+<h2><span style="font-size: 30pt;">Evidence for a <span style="color: var(--lab-blue);">genetic correlation</span> between specific hearing loss subtypes and dementia</span></h2>
+<div style="width: 400px;">
+<div class="fragment fade-in" data-fragment-index="1">
+<div class="fragment semi-fade-out" data-fragment-index="4">
+<ul>
+<li>Model-based hearing loss phenotype</li>
+</ul>
+</div>
+</div>
+<div class="fragment fade-in" data-fragment-index="4">
+<ul>
+<li>Genes linked to dementia were also associated with <strong>metabolic</strong> hearing loss</li>
+</ul>
+</div>
+</div>
+<div class="fragment fade-in-then-out" data-fragment-index="1" style="position: absolute; top: 100px; left: 500px;">
+<p><img data-src="img/aim1/vaden_plot.jpeg" style="width: 450px;"></p>
+</div>
+<div class="fragment fade-in-then-out" data-fragment-index="2" style="position: absolute; top: 100px; left: 500px;">
+<p><img data-src="img/aim1/vaden_s.png" style="width: 450px;"></p>
+</div>
+<div class="fragment fade-in-then-out" data-fragment-index="3" style="position: absolute; top: 100px; left: 500px;">
+<p><img data-src="img/aim1/vaden_m.png" style="width: 450px;"></p>
+</div>
+<div class="fragment fade-in overview-text-box" data-fragment-index="4" style="color: white; background: gray; position: absolute; top: 150px; left: 500px; width: 500px; font-size: 50pt; padding-top: 0.1em;">
+<p><em>ARHGEF28</em></p>
+<p><em>IPO7</em></p>
+<p><em>FUS</em></p>
+</div>
+</section>
+<section id="project-overview" class="slide level2" data-name="Overview" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Project Overview</h2>
+<div class="fragment fade-in overview-text-box" data-fragment-index="1" style="color: white; background: #385E9D; position: absolute; top: 100px; left: 50px; width: 1000px;">
+<p><span style="text-decoration: underline;">Hypothesis</span></p>
+<p><span style="font-size: 27pt;">Using clear hearing and cognitive phenotypes, we can better understand the genetic relationship between ARHL and dementia.</span></p>
+</div>
+<div class="fragment fade-in overview-text-box" data-fragment-index="2" data-id="aim1-box" style="text-align: center; background: gray; color: white; position: absolute; top: 300px; left: 50px; width: 450px; padding: 0.5em;">
+<p>Aim 1: Underlying Genetics</p>
+<div class="fragment fade-in" data-fragment-index="3">
+<p><span style="font-size: 23pt;">- Causal Relationship (MR)</span></p>
+</div>
+<div class="fragment fade-in" data-fragment-index="4">
+<p><span style="font-size: 23pt;">- Common Cause (MTAG)</span></p>
+</div>
+</div>
+<div class="fragment fade-in overview-text-box" data-fragment-index="5" data-id="aim2-box" style="text-align: center; background: gray; color: white; position: absolute; top: 300px; left: 560px; width: 450px; padding: 0.5em;">
+<p>Aim 2: Prediction Model</p>
+<div class="fragment fade-in" data-fragment-index="6">
+<p><span style="font-size: 23pt; text-align: center;">- PGS robust to ancestry differences (SBayesRC)</span></p>
+</div>
+</div>
+</section>
+<section id="project-overview-1" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Project Overview</h2>
+<div class="overview-text-box" style="color: white; background: #385E9D; position: absolute; top: 100px; left: 50px; width: 1000px;">
+<p><span style="text-decoration: underline;">Hypothesis</span></p>
+<p><span style="font-size: 27pt;">Using clear hearing and cognitive phenotypes, we can better understand the genetic relationship between ARHL and dementia.</span></p>
+</div>
+<div class="overview-text-box" data-id="aim1-box" style="text-align: center; background: var(--lab-yellow); color: white; position: absolute; top: 300px; left: 325px; width: 450px; padding: 0.5em; z-index: 1;">
+<p>Aim 1: Underlying Genetics</p>
+<div style="font-size: 23pt;">
+<ul>
+<li><p>Causal Relationship (MR)</p></li>
+<li><p>Common Cause (MTAG)</p></li>
+</ul>
+</div>
+</div>
+<div class="overview-text-box" data-id="aim2-box" style="text-align: center; background: lightgray; opacity: 0.6; color: white; position: absolute; top: 300px; left: 760px; width: 450px; padding: 0.5em;">
+<p>Aim 2: Prediction Model</p>
+<p><span style="font-size: 23pt; text-align: center;">- PGS robust to ancestry differences (SBayesRC)</span></p>
+</div>
+</section>
+<section id="what-data-are-we-using" class="slide level2" data-name="Data" data-auto-animate="true">
+<h2 data-id="quarto-animate-title"><span style="font-size: 40pt;">What <span style="color: var(--lab-blue);">data</span> are we using?</span></h2>
+<h3 style="color: gray; font-size: 18pt !important;" id="canadian-longitudinal-study-on-aging">(Canadian Longitudinal Study on Aging)</h3>
+<div class="fragment fade-in-then-out" data-fragment-index="1" style="position: absolute; left: 250px; top: 100px; width: 600px; height: auto;">
+<p><img data-src="img/aim1/clsa_desc.jpg"></p>
+</div>
+<div class="fragment fade-in-then-out" data-fragment-index="2" style="position: absolute; left: 250px; top: 100px; width: 600px; height: auto;">
+<p><img data-src="img/aim1/clsa_desc_num_hl.jpeg"></p>
+</div>
+<div class="fragment fade-in-then-out" data-fragment-index="2" style="position: absolute; left: 850px; top: 200px; width: 600px; height: auto; color: red; font-size: 20pt;">
+<p>Comprehensive Cohort</p>
+</div>
+<div class="fragment fade-in-then-out" data-fragment-index="3" style="position: absolute; left: 250px; top: 100px; width: 600px; height: auto;">
+<p><img data-src="img/aim1/clsa_desc_timeline_hl.jpeg"></p>
+</div>
+<div class="fragment fade-in-then-out" data-fragment-index="3" style="position: absolute; left: 45px; top: 350px; width: 200px; height: auto; color: red; font-size: 20pt; text-align: right;">
+<p>Cross-Sectional and Longitudinal Data</p>
+</div>
+</section>
+<section id="what-is-our-dementia-phenotype" class="slide level2">
+<h2><span style="font-size: 40pt;">What is our <span style="color: var(--lab-blue);">dementia phenotype</span>?</span></h2>
+<h3 style="font-size: 20pt !important;" id="cognitive-impairment-indicator"><span style="color: var(--lab-blue);">Cognitive Impairment Indicator</span></h3>
+<div class="fragment fade-in-then-out" data-fragment-index="1" style="width: 300px; position: absolute; top: 28%; left: 5%; font-size: 35pt;">
+<p><span style="color: var(--lab-yellow)">Memory</span></p>
+<p><span style="color: var(--lab-blue)">Executive Function</span></p>
+</div>
+<div class="fragment fade-out" data-fragment-index="1" style="position: absolute; left: 30%; top: 15%; width: 750px; height: auto;">
+<p><img data-src="img/aim1/CII_table.png"></p>
+</div>
+<div class="fragment fade-in-then-out" data-fragment-index="1" style="position: absolute; left: 30%; top: 15%; width: 750px; height: auto;">
+<p><img data-src="img/aim1/CII_table_tests.png"></p>
+</div>
+<div class="fragment fade-in-then-out" data-fragment-index="1" style="position: absolute; left: 50%; top: 20%; width: 550px; height: auto;">
+<p><img data-src="img/aim1/CII_table_tests_hl.png"></p>
+</div>
+<div class="fragment fade-in-then-out" data-fragment-index="2" style="position: absolute; left: 30%; top: 15%; width: 750px; height: auto;">
+<p><img data-src="img/aim1/CII_table_imp.png"></p>
+</div>
+<div class="fragment fade-in-then-out" data-fragment-index="2" style="position: absolute; left: 10%; top: 40%; width: 950px; height: auto;">
+<p><img data-src="img/aim1/CII_table_imp_hl.png"></p>
+</div>
+</section>
+<section id="what-is-our-hearing-loss-phenotype" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title"><span style="font-size: 40pt;">What is our <span style="color: var(--lab-blue);">hearing loss phenotype</span>?</span></h2>
+<h3 id="arhl-subtype-estimates"><span style="color: var(--lab-blue);">ARHL subtype estimates</span></h3>
+<div style="position: absolute; top: 100px; left: 500px;">
+<p><img data-src="img/aim1/vaden_plot.jpeg" style="width: 475px;"></p>
+</div>
+<div style="width: 500px;">
+<p>Metabolic Hearing Loss</p>
+<p>Sensory Hearing Loss</p>
+</div>
+</section>
+<section id="what-is-our-hearing-loss-phenotype-1" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title"><span style="font-size: 40pt;">What is our <span style="color: var(--lab-blue);">hearing loss phenotype</span>?</span></h2>
+<h3 id="arhl-subtype-estimates-1"><span style="color: var(--lab-blue);">ARHL subtype estimates</span></h3>
+<div style="position: absolute; top: 100px; left: 500px;">
+<p><img data-src="img/aim1/vaden_m.png" style="width: 475px;"></p>
+</div>
+<div style="width: 500px;">
+<p><strong>Metabolic Hearing Loss</strong></p>
+<div style="font-size:23pt;">
+<p>Strongly correlated with:</p>
+<ul>
+<li>Age</li>
+<li>Cognitive impairment (<em>P</em>: 3x10<sup>-9</sup>)</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="what-is-our-hearing-loss-phenotype-2" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title"><span style="font-size: 40pt;">What is our <span style="color: var(--lab-blue);">hearing loss phenotype</span>?</span></h2>
+<h3 id="arhl-subtype-estimates-2"><span style="color: var(--lab-blue);">ARHL subtype estimates</span></h3>
+<div style="position: absolute; top: 100px; left: 500px;">
+<p><img data-src="img/aim1/vaden_s.png" style="width: 475px;"></p>
+</div>
+<div style="width: 500px;">
+<p><strong>Sensory Hearing Loss</strong></p>
+<div style="font-size:23pt;">
+<p>Not strongly correlated with:</p>
+<ul>
+<li>Age</li>
+<li>Cognitive impairment (<em>P</em>: 0.35)</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="whats-in-the-clsa-genotype-data" class="slide level2">
+<h2>What’s in the CLSA <span style="color: var(--lab-blue);">genotype data</span>?</h2>
+<div class="fragment fade-in-then-semi-out" data-fragment-index="1">
+<p>26,622 individuals</p>
+</div>
+<div class="fragment fade-in-then-semi-out" data-fragment-index="2">
+<p>794k genotyped variants</p>
+<p>308 million imputed variants</p>
+</div>
+<div class="fragment fade-in" data-fragment-index="3">
+<p>Extensive QC</p>
+</div>
+<div class="fragment fade-in" data-fragment-index="1" style="position: absolute; left: 500px; top: 60px; width: 600px; height: auto;">
+<div class="fragment fade-out" data-fragment-index="4">
+<p><img data-src="img/aim1/clsa/clsa_ancestry.png"></p>
+</div>
+</div>
+<div class="fragment fade-in" data-fragment-index="4" style="position: absolute; left: 500px; top: 60px; width: 600px; height: auto;">
+<p><img data-src="img/aim1/clsa/clsa_ancestry_hl.png"></p>
+</div>
+</section>
+<section id="aim-1---pre-gwas" class="slide level2" data-auto-animate="true" data-name="Aim 1">
+<h2 data-id="quarto-animate-title">Aim 1 - <span style="color: var(--lab-blue);">Pre-GWAS</span></h2>
+<h3 style="color: gray;" id="covariate-selection">Covariate selection</h3>
+<div class="fragment slide-in-from-right-then-fade slow3" data-fragment-index="1" style="position: absolute; left: 50%; top: 10%; width: 350px; height: auto;">
+<p><img data-src="img/dem/dem_lancet.jpg"></p>
+</div>
+<div class="fragment fade-out" data-fragment-index="3">
+<div class="fragment fade-in slow2" data-fragment-index="2" style="position: absolute; left: 40%; top: 20%; width: 650px; height: auto;">
+<p><img data-src="img/stepwise.png"></p>
+</div>
+<div style="position: absolute; top: 17%;">
+<div class="fragment slide-in-from-bottom slow1" data-fragment-index="1">
+<p>Vision Loss</p>
+</div>
+<div class="fragment slide-in-from-bottom" data-fragment-index="1">
+<p>Hypertension</p>
+</div>
+<div class="fragment slide-in-from-bottom slow1" data-fragment-index="1">
+<p>Depression</p>
+</div>
+<div class="fragment slide-in-from-bottom" data-fragment-index="1">
+<p>TBI</p>
+</div>
+<div class="fragment slide-in-from-bottom slow1" data-fragment-index="1">
+<p>Diabetes</p>
+</div>
+<div class="fragment slide-in-from-bottom" data-fragment-index="1">
+<p>Smoking and Alcohol</p>
+</div>
+<div class="fragment slide-in-from-bottom slow2" data-fragment-index="1">
+<p>Social Activity</p>
+</div>
+</div>
+</div>
+<div class="fragment slide-in-from-left slow2" data-fragment-index="3" style="position: absolute; left: 5%; top: 15%; width: 950px; height: auto;">
+<p><img data-src="img/covars_selected.png"></p>
+</div>
+</section>
+<section id="aim-1---pre-gwas-1" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Aim 1 - <span style="color: var(--lab-blue);">Pre-GWAS</span></h2>
+<h3 style="color: gray;" id="marker-quality-control">Marker quality control</h3>
+<div class="fragment slide-in-from-right-then-left" data-fragment-index="1" style="position: absolute; left: 10%; top: 0%; width: 900px; height: auto;">
+<p><img data-src="img/pre_QC/g1.png"></p>
+</div>
+<div class="fragment slide-in-from-right-then-left" data-fragment-index="2" style="position: absolute; left: 10%; top: 0%; width: 900px; height: auto;">
+<p><img data-src="img/pre_QC/g2.png"></p>
+</div>
+<div class="fragment slide-in-from-right-then-left" data-fragment-index="3" style="position: absolute; left: 10%; top: 0%; width: 900px; height: auto;">
+<p><img data-src="img/pre_QC/g3.png"></p>
+</div>
+<div class="fragment slide-in-from-right-then-left" data-fragment-index="4" style="position: absolute; left: 10%; top: 0%; width: 900px; height: auto;">
+<p><img data-src="img/pre_QC/g4.png"></p>
+</div>
+<div class="fragment slide-in-from-right-then-left" data-fragment-index="5" style="position: absolute; left: 10%; top: 0%; width: 900px; height: auto;">
+<p><img data-src="img/pre_QC/g5.png"></p>
+</div>
+<div class="fragment slide-in-from-right" data-id="g6" data-fragment-index="6" style="position: absolute; left: 10%; top: 0%; width: 900px; height: auto;">
+<p><img data-src="img/pre_QC/g6.png"></p>
+</div>
+<div data-id="s1" style="position: absolute; left: 150%; top: 0%; width: 900px; height: auto;">
+<p><img data-src="img/pre_QC/s1.png"></p>
+</div>
+</section>
+<section id="aim-1---pre-gwas-2" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Aim 1 - <span style="color: var(--lab-blue);">Pre-GWAS</span></h2>
+<h3 style="color: gray;" id="sample-quality-control">Sample quality control</h3>
+<div data-id="g6" style="position: absolute; left: -150%; top: 0%; width: 900px; height: auto;">
+<p><img data-src="img/pre_QC/g6.png"></p>
+</div>
+<div class="fragment fade-out" data-id="s1" data-fragment-index="1" style="position: absolute; left: 10%; top: 0%; width: 900px; height: auto;">
+<p><img data-src="img/pre_QC/s1.png"></p>
+</div>
+<div class="fragment slide-in-from-right-then-left" data-fragment-index="1" style="position: absolute; left: 10%; top: 0%; width: 900px; height: auto;">
+<p><img data-src="img/pre_QC/s2.png"></p>
+</div>
+<div class="fragment slide-in-from-right-then-left" data-fragment-index="2" style="position: absolute; left: 10%; top: 0%; width: 900px; height: auto;">
+<p><img data-src="img/pre_QC/s3.png"></p>
+</div>
+<div class="fragment slide-in-from-right-then-left" data-fragment-index="3" style="position: absolute; left: 10%; top: 0%; width: 900px; height: auto;">
+<p><img data-src="img/pre_QC/s4.png"></p>
+</div>
+<div class="fragment slide-in-from-right-then-left" data-fragment-index="4" style="position: absolute; left: 10%; top: 0%; width: 900px; height: auto;">
+<p><img data-src="img/pre_QC/s5.png"></p>
+</div>
+<div class="fragment slide-in-from-right" data-fragment-index="5" style="position: absolute; left: 10%; top: 0%; width: 900px; height: auto;">
+<p><img data-src="img/pre_QC/s6.png"></p>
+</div>
+</section>
+<section id="aim-1---gwas" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Aim 1 - <span style="color: var(--lab-blue);">GWAS</span></h2>
+<div class="fragment fade-out" data-fragment-index="1" style="position: absolute; left: 20%; top: 10%; width: 1400px; height: auto;">
+<p><img data-src="img/mtag/mtag1_dem.png"></p>
+</div>
+<div class="fragment slide-in-from-bottom-then-top" data-fragment-index="1" style="position: absolute; left: 10%; top: 10%; width: 800px; height: auto;">
+<p><img data-src="img/cii_man/cii_all_man.png"></p>
+</div>
+<div class="fragment slide-in-from-bottom" data-fragment-index="2" style="position: absolute; left: 10%; top: 10%; width: 800px; height: auto;">
+<div class="fragment fade-out" data-fragment-index="3">
+<p><img data-src="img/cii_man/cii_eur_man.png"></p>
+</div>
+</div>
+<div class="fragment" data-fragment-index="3" style="position: absolute; left: 10%; top: 10%; width: 800px; height: auto;">
+<p><img data-src="img/cii_man/cii_eur_man_hl.png"></p>
+</div>
+</section>
+<section id="aim-1-mendelian-randomization" class="slide level2">
+<h2>Aim 1: <span style="color: var(--lab-blue);">Mendelian Randomization</span></h2>
+<ul>
+<li><a href="https://github.com/YangLabHKUST/MR-APSS/tree/master">MR-APSS</a></li>
+</ul>
+<div class="fragment fade-out" data-fragment-index="1">
+<div style="position: absolute; top: 25px; left: 20px; width: 1000px;">
+<p><img data-src="img/MR/mr1.png"></p>
+</div>
+<div style="position: absolute; top: 200px; left: 425px; width: 225px;">
+<p><img data-src="img/MR/ARHL.png"></p>
+</div>
+<div style="position: absolute; top: 225px; left: 750px; width: 225px;">
+<p><img data-src="img/MR/dem_brain.png"></p>
+</div>
+</div>
+<div class="fragment fade-in slow1" data-fragment-index="1" style="position: absolute; top: 7%; left: 20%; width: 500px;">
+<p><img data-src="img/fgbg.jpg"></p>
+</div>
+<div class="fragment fade-in" data-fragment-index="2" style="position: absolute; top: 54%; left: 68%; color: red;">
+<p>Bias Model</p>
+</div>
+<div class="fragment fade-in" data-fragment-index="3" style="position: absolute; top: 71%; left: 56%; color: red;">
+<p>MR Model</p>
+</div>
+</section>
+<section id="aim-1-mr-quality-control" class="slide level2">
+<h2>Aim 1: <span style="color: var(--lab-blue);">MR Quality Control</span></h2>
+<div style="position: absolute; left: 0%; top: 20%; width: 450px; height: auto;">
+<p><img data-src="img/cii_man/cii_eur_man.png"></p>
+</div>
+<div class="fragment fade-in" data-fragment-index="1" style="position: absolute; top: 8%; left: 33%; width: 800px; z-index: -1;">
+<p><img data-src="img/MR/mr_qc.png"></p>
+</div>
+</section>
+<section id="next-steps" class="slide level2" data-name="Future" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Next steps</h2>
+<div style="width:400px; font-size: 26pt;">
+<div class="fragment fade-in-then-semi-out" data-fragment-index="2">
+<p>Measure causal relationship (<span style="color:gray;">MR-APSS</span>)</p>
+</div>
+<div class="fragment fade-in-then-semi-out" data-fragment-index="3">
+<p>Identify correlated genetic loci (<span style="color:gray;">MTAG</span>)</p>
+</div>
+<div class="fragment fade-in" data-fragment-index="4">
+<p>Identify likely causal variants (<span style="color:gray;">PolyFun/SuSiE</span>)</p>
+</div>
+</div>
+<div style="position: absolute; top: -4%; left: 45%; width: 500px;">
+<p><img data-src="img/future/design1.png"></p>
+</div>
+<div class="overview-text-box fragment fade-in" data-fragment-index="1" data-id="aim1-box2" style="text-align: center; background: var(--lab-yellow); color: white; position: absolute; top: 25%; left: 45%; width: 450px; padding: 0.5em; z-index: 1;">
+<p>Aim 1: Underlying Genetics</p>
+<div style="font-size: 23pt;">
+<ul>
+<li>Causal Relationship (MR)</li>
+</ul>
+</div>
+<div style="font-size: 23pt;">
+<ul>
+<li>Common Cause (MTAG)</li>
+</ul>
+</div>
+</div>
+<div class="fragment fade-in slow4" data-fragment-index="2" data-id="arrow" style="position: absolute; top: 22%; left: 66.75%; width: 35px;">
+<p><img data-src="img/future/arrow.png"></p>
+</div>
+<div class="overview-text-box" data-id="aim2-box2" style="text-align: center; background: gray; color: white; position: absolute; top: 153%; left: 47%; width: 450px; z-index: 1;">
+<p><span style="font-size: 23pt;">Aim 2: Prediction Model</span></p>
+</div>
+</section>
+<section id="next-steps-1" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Next Steps</h2>
+<div style="position: absolute; top: -5%; left: 45%; width: 500px;">
+<p><img data-src="img/future/design1.png"></p>
+</div>
+<div class="overview-text-box" data-id="aim1-box2" style="text-align: center; background: var(--lab-yellow); color: white; position: absolute; top: 24%; left: 47%; width: 450px; z-index: 1;">
+<p><span style="font-size: 23pt;">Aim 1: Underlying Genetics</span></p>
+</div>
+<div data-id="arrow" style="position: absolute; top: 34%; left: 66.75%; width: 35px; height">
+<p><img data-src="img/future/arrow.png"></p>
+</div>
+<div class="overview-text-box" data-id="aim2-box2" style="text-align: center; background: gray; color: white; position: absolute; top: 53%; left: 47%; width: 450px; z-index: 1;">
+<p><span style="font-size: 23pt;">Aim 2: Prediction Model</span></p>
+</div>
+<div class="overview-text-box" data-id="future" style="text-align: center; background: #385E9D; color: white; position: absolute; top: 165%; left: 47%; width: 450px; z-index: 1;">
+<p><span style="font-size: 23pt;">Future Directions</span></p>
+</div>
+</section>
+<section id="next-steps-2" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Next steps</h2>
+<div style="position: absolute; top: -5%; left: 45%; width: 500px;">
+<p><img data-src="img/future/design1.png"></p>
+</div>
+<div class="overview-text-box" data-id="aim1-box2" style="text-align: center; background: var(--lab-yellow); color: white; position: absolute; top: 24%; left: 47%; width: 450px; z-index: 1;">
+<p><span style="font-size: 23pt;">Aim 1: Underlying Genetics</span></p>
+</div>
+<div class="overview-text-box" data-id="aim2-box2" style="text-align: center; background: gray; color: white; position: absolute; top: 38%; left: 47%; width: 450px; z-index: 1;">
+<p><span style="font-size: 23pt;">Aim 2: Prediction Model</span></p>
+</div>
+<div data-id="arrow" style="position: absolute; top: 46%; left: 66.75%; width: 35px; height">
+<p><img data-src="img/future/arrow.png"></p>
+</div>
+<div class="overview-text-box" data-id="future" style="text-align: center; background: #385E9D; color: white; position: absolute; top: 65%; left: 47%; width: 450px; z-index: 1;">
+<p><span style="font-size: 23pt;">Future Directions</span></p>
+</div>
+</section>
+<section id="future-directions" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title"><span style="color: var(--lab-blue)">Future directions</span></h2>
+<div class="overview-text-box" data-id="future" style="background: #385E9D; color: white; position: absolute; top: 13%; left: 0%; width: 1050px; padding: 0.5em; z-index: 1;">
+<div class="columns" style="font-size: 27pt;">
+<div class="column fragment fade-in-then-semi-out" data-fragment-index="1" style="width:33%;">
+<p>Sex-stratified GWAS</p>
+<p><img data-src="img/future/future_sex.png" style="width: 300px;"></p>
+</div><div class="column fragment fade-in-then-semi-out" data-fragment-index="2" style="width:33%;">
+<p>MHC complex</p>
+<p><img data-src="img/future/future_hla.png" style="width: 80px;"></p>
+</div><div class="column fragment fade-in-then-semi-out" data-fragment-index="3" style="width:33%;">
+<p>Short-tandem repeats</p>
+<p><img data-src="img/future/future_str.png" style="width: 250px;"></p>
+</div></div>
+</div>
+</section>
+<section id="limitations" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title"><span style="color: var(--lab-yellow)">Limitations</span></h2>
+<div class="overview-text-box" data-id="future" style="background: #f2ce82; position: absolute; top: 13%; left: 0%; width: 1050px; padding: 0.5em; z-index: 1;">
+<div class="columns" style="font-size: 27pt;">
+<div class="column fragment fade-in-then-semi-out" data-fragment-index="1" style="width:33%;">
+<p><strong>Sample Population</strong></p>
+<div style="width: 325px;">
+<p><img data-src="img/future/canada.png"></p>
+</div>
+</div><div class="column fragment fade-in" data-fragment-index="2" style="width:33%;">
+<div class="fragment semi-fade-out" data-fragment-index="4">
+<p><strong>Cross-Sectional Data</strong></p>
+<div class="fragment fade-out" data-fragment-index="3" style="position: absolute; top: 22%; left: 40%;">
+<p><img data-src="img/future/clock.png" style="width: 200px;"></p>
+</div>
+<div class="fragment fade-in" data-fragment-index="3" style="position: absolute; top: 30%; left: 33%;">
+<p><img data-src="img/future/clock_long.png" style="width: 400px;"></p>
+</div>
+</div>
+</div><div class="column fragment fade-in-then-semi-out" data-fragment-index="4" style="width:33%;">
+<p><strong>Cognitive Phenotype</strong></p>
+<p><img data-src="img/aim1/CII_table_tests_hl.png" style="width: 250px;"></p>
+</div></div>
+</div>
+</section>
+<section id="academic-progress-report" class="slide level2 scrollable" data-auto-animate="true" data-name="Academics">
+<h2 data-id="quarto-animate-title"><span style="font-size: 35pt;">Academic Progress Report</span></h2>
+<h3 id="since-last-meeting"><span style="color: gray;">Since last meeting</span></h3>
+<p><strong>Academics</strong></p>
+<ul>
+<li>IMED 7170 (A+)</li>
+<li>IMED 7280 (A+)</li>
+</ul>
+<p><strong>Awards</strong></p>
+<ul>
+<li>CIHR CGS-M</li>
+<li>3MT Finalist</li>
+<li>Outstanding Poster (BMG Research Day)</li>
+</ul>
+<p><strong>Abstracts</strong></p>
+<ul>
+<li>AAIC (July 2025)</li>
+<li>MSHRF (June 2025)</li>
+</ul>
+<p><strong>Presentations</strong></p>
+<ul>
+<li>BMG seminar (March 2025)</li>
+<li>MHRE lecture: Genetics of Aging (Feb 2025)</li>
+<li>Centre on Aging: STAR meeting (Nov 2024)</li>
+</ul>
+<p><strong>Committees</strong></p>
+<ul>
+<li>Event Representative, BMG GSA (since Sept 2024)</li>
+<li>VP Marketing &amp; Events, HSGSA (since May 2025)</li>
+</ul>
+<p><strong>Volunteering</strong></p>
+<ul>
+<li>Science Fair Judge (April 2025)</li>
+<li>School Group Guide, Science Rendezvous (April 2025)</li>
+</ul>
+</section>
+<section id="acknowledgements" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title"><span style="font-size: 35pt;">Acknowledgements</span></h2>
+<div style="position: absolute; top: 6%; left: 5%; width: 950px;">
+<p><img data-src="img/ack.png"></p>
+</div>
+</section>
+<section id="supp.-1---arhl" class="slide level2" data-name="Supplementary">
+<h2>Supp. 1 - ARHL</h2>
+<h3 style="color: gray;" id="age-related-hearing-loss">Age-Related Hearing Loss</h3>
+<div class="fragment fade-in-then-semi-out" data-fragment-index="1">
+<p>Symptoms</p>
+</div>
+<div class="fragment fade-in-then-semi-out" data-fragment-index="2">
+<p>Demographics</p>
+</div>
+<div class="fragment fade-in" data-fragment-index="3">
+<p>Potential Pathologies</p>
+</div>
+<div class="fragment fade-in-then-out" data-fragment-index="1" style="position: absolute; top: 50px; left: 450px; width: 525px;">
+<p><img data-src="img/ear/ear_audiogram.png"></p>
+</div>
+<div class="fragment fade-in-then-out" data-fragment-index="2" style="position: absolute; left: 150px; top: 215px; width: 325px; height: auto;">
+<p><img data-src="img/ear/ear_sex.png" data-auto-animate-id="ear1"></p>
+</div>
+<div class="fragment fade-in-then-out" data-fragment-index="2" style="position: absolute; left: 475px; top: 220px; width: 275px; height: auto;">
+<p><img data-src="img/ear/ear_age.png" data-auto-animate-id="ear2"></p>
+</div>
+<div class="fragment fade-in-then-out" data-fragment-index="2" style="position: absolute; left: 750px; top: 215px; width: 425px; height: auto;">
+<p><img data-src="img/ear/ear_demo.png" data-auto-animate-id="ear3"></p>
+</div>
+<div class="fragment fade-in dementia-text-box" data-fragment-index="3" style="text-align: center; background: var(--lab-yellow); color: white; position: absolute; top: 85px; left: 550px; width: 500px; padding: 0.1em;">
+<p>ENVIRONMENTAL FACTORS</p>
+<p>(noise, drug toxicity)</p>
+</div>
+<div class="fragment fade-in dementia-text-box" data-fragment-index="4" style="text-align: center;  background: var(--lab-yellow); color: white; position: absolute; top: 245px; left: 550px; width: 500px; padding: 0.1em;">
+<p>OXIDATIVE STRESS</p>
+</div>
+<div class="fragment fade-in dementia-text-box" data-fragment-index="5" style="text-align: center; background: var(--lab-yellow); color: white; position: absolute; top: 345px; left: 550px; width: 500px; padding: 0.1em;">
+<p>CHRONIC INFLAMMATION</p>
+</div>
+<div class="fragment fade-in dementia-text-box" data-fragment-index="6" style="text-align: center; background: var(--lab-yellow); color: white; position: absolute; top: 445px; left: 550px; width: 500px; padding: 0.1em;">
+<p>GENETICS</p>
+</div>
+</section>
+<section id="supp.-1---clsa-demographics" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Supp. 1 - CLSA Demographics</h2>
+<div class="fragment slide-out-to-left" data-fragment-index="1" style="position: absolute; left: 250px; top: 50px; width: 750px; height: auto;">
+<p><img data-src="img/aim1/clsa/clsa_age_by_sex.png"></p>
+</div>
+<div class="fragment slide-in-from-right-then-left" data-fragment-index="1" style="position: absolute; left: 350px; top: 10px; width: 650px; height: auto;">
+<p><img data-src="img/aim1/clsa/clsa_prov_by_age.png"></p>
+</div>
+<div class="fragment slide-in-from-right-then-left" data-fragment-index="2" style="position: absolute; left: 350px; top: 10px; width: 650px; height: auto;">
+<p><img data-src="img/aim1/clsa/clsa_ed_by_age.png"></p>
+</div>
+<div class="fragment slide-in-from-right" data-fragment-index="3" style="position: absolute; left: 350px; top: 10px; width: 650px; height: auto;">
+<p><img data-src="img/aim1/clsa/clsa_inc_by_age.png"></p>
+</div>
+</section>
+<section id="supp.-2---initial-analysis" class="slide level2">
+<h2>Supp. 2 - Initial Analysis</h2>
+<div style="position: absolute; top: 150px;">
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;margin:0px auto;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:30px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:30px !important;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-1wig{font-weight:bold;text-align:left;vertical-align:top; font-size:30px !important;}
+.tg .tg-0lax{text-align:left;vertical-align:top; font-size:30px !important;}
+</style>
+
+<table class="tg caption-top" data-quarto-postprocess="true">
+<thead>
+<tr class="header">
+<th class="tg-0lax" data-quarto-table-cell-role="th"><span style="font-weight:bold">ARHL Subtype</span></th>
+<th class="tg-1wig" data-quarto-table-cell-role="th"><span style="font-weight:bold">Coefficient</span>(SE)</th>
+<th class="tg-0lax" data-quarto-table-cell-role="th"><span style="font-weight:bold">OR (95% CI)</span></th>
+<th class="tg-0lax" data-quarto-table-cell-role="th"><span style="font-weight:bold">P-value</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td class="tg-0lax">Metabolic ARHL</td>
+<td class="tg-0lax">0.017 (0.003)</td>
+<td class="tg-0lax">1.016 (1.011,1.022)</td>
+<td class="tg-0lax" style="background: #c3f78c"><span style="font-weight:bold;">3E-9</span></td>
+</tr>
+<tr class="even">
+<td class="tg-0lax">Sensory ARHL</td>
+<td class="tg-0lax">-0.003 (0.004)</td>
+<td class="tg-0lax">0.99 (0.988,1.004)</td>
+<td class="tg-0lax">0.35</td>
+</tr>
+</tbody><tfoot>
+<tr class="odd">
+<td colspan="4" style="text-align: left; padding-top: 10px; font-size: 14pt;"><strong>Acronyms:</strong> <strong>ARHL</strong> = Age-related Hearing Loss; <strong>SE</strong> = Standard Error; <strong>OR</strong> = Odds Ratio; <strong>CI</strong> = Confidence Interval.</td>
+</tr>
+</tfoot>
+
+</table>
+
+  
+</div>
+</section>
+<section id="supp.-3---met.-hl-gene-information" class="slide level2">
+<h2>Supp. 3 - Met. HL Gene Information</h2>
+<div style="position: absolute; top: 15%;">
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;margin:0px auto;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:22px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:22px !important;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-1wig{font-weight:bold;text-align:left;vertical-align:top; font-size:22px !important;}
+.tg .tg-0lax{text-align:left;vertical-align:top; font-size:22px !important;}
+</style>
+
+<table class="tg caption-top" data-quarto-postprocess="true">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th class="tg-0lax" data-quarto-table-cell-role="th"><span style="font-weight:bold">Gene</span></th>
+<th class="tg-1wig" data-quarto-table-cell-role="th"><span style="font-weight:bold">
+Function</span></th>
+<th class="tg-0lax" data-quarto-table-cell-role="th"><span style="font-weight:bold">Details</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td class="tg-0lax"><em>ARHGEF28</em></td>
+<td class="tg-0lax">Rho-guanine nuclotide exchange factor</td>
+<td class="tg-0lax">Implicated in motor neuron disease pathogenesis; significantly associated with hearing difficulty.</td>
+</tr>
+<tr class="even">
+<td class="tg-0lax"><em>FUS</em></td>
+<td class="tg-0lax">RNA-binding protein</td>
+<td class="tg-0lax">Mislocalizes and forms aggregates (FTD); may maintain homeostasis in SV of inner ear</td>
+</tr>
+<tr class="odd">
+<td class="tg-0lax"><em>IPO7</em></td>
+<td class="tg-0lax">Nuclear import protein</td>
+<td class="tg-0lax">modulates phase behavior of prion-like proteins (<em>FUS</em> included); linked to inflammatory responses in brain</td>
+</tr>
+</tbody><tfoot>
+<tr class="even">
+<td colspan="3" style="text-align: left; padding-top: 10px; font-size: 20pt;"><strong>Acronyms:</strong> <strong>FTD</strong> = Frontotemporal Dementia; <strong>SV</strong> = Stria Vascularis.</td>
+</tr>
+</tfoot>
+
+</table>
+
+  
+</div>
+</section>
+<section id="supp.-4---mr-and-mtag-assumptions" class="slide level2">
+<h2>Supp. 4 - MR and MTAG assumptions</h2>
+<div class="columns" style="font-size: 25pt;">
+<div class="column">
+<p><strong>MR</strong></p>
+<ul>
+<li>variants are strongly associated with the exposure, and explain a significant portion of the variability</li>
+<li>variants are independent of confounders affecting both exposure and outcome</li>
+<li>variants only affect outcome through their impact on the exposure</li>
+</ul>
+</div><div class="column">
+<p><strong>MTAG</strong></p>
+<ul>
+<li>variants influence the traits in a similar way (homogenous effect sizes)</li>
+<li>small errors or randomness in our estimates don’t distort our findings (sampling variance)</li>
+<li>sample overlap is accurately accounted for (bi-LDSC)</li>
+</ul>
+</div></div>
+</section>
+<section id="supp.-5---other-clsa-data" class="slide level2">
+<h2>Supp. 5 - Other CLSA data</h2>
+<div style="width: 900px;">
+<p><img data-src="img/supp/clsa_biospecimen.png"></p>
+</div>
+</section>
+<section id="supp.-6---cii-associations" class="slide level2">
+<h2>Supp. 6 - CII Associations</h2>
+<div class="fragment slide-in-from-right-then-fade slow3" data-fragment-index="1" style="position: absolute; left: 50%; top: 10%; width: 300px; height: auto;">
+<p><img data-src="img/dem/dem_lancet.jpg"></p>
+</div>
+<div style="position: absolute; top: 17%;">
+<div class="fragment slide-in-from-bottom-then-top slow1" data-fragment-index="1">
+<p>Vision Loss</p>
+</div>
+<div class="fragment slide-in-from-bottom-then-top" data-fragment-index="1">
+<p>Hypertension</p>
+</div>
+<div class="fragment slide-in-from-bottom-then-top slow1" data-fragment-index="1">
+<p>Depression</p>
+</div>
+<div class="fragment slide-in-from-bottom-then-top" data-fragment-index="1">
+<p>TBI</p>
+</div>
+<div class="fragment slide-in-from-bottom-then-top slow1" data-fragment-index="1">
+<p>Diabetes</p>
+</div>
+<div class="fragment slide-in-from-bottom-then-top" data-fragment-index="1">
+<p>Smoking and Alcohol</p>
+</div>
+<div class="fragment slide-in-from-bottom-then-top slow2" data-fragment-index="1">
+<p>Social Activity</p>
+</div>
+</div>
+<div class="fragment slide-in-from-left-then-right" data-fragment-index="2" style="position: absolute; left: 400px; top: 60px; width: 500px; height: auto;">
+<p><img data-src="img/aim1/table_demo.png"></p>
+</div>
+<div class="fragment slide-in-from-left-then-right" data-fragment-index="3" style="position: absolute; left: 38%; top: 9%; width: 400px; height: auto;">
+<p><img data-src="img/aim1/table_med.png"></p>
+</div>
+<div class="fragment slide-in-from-left-then-right" data-fragment-index="4" style="position: absolute; left: 38%; top: 9%; width: 375px; height: auto;">
+<p><img data-src="img/aim1/table_behav.png"></p>
+</div>
+</section>
+<section id="supp.-7---gwas-quality-control" class="slide level2">
+<h2>Supp. 7 - GWAS Quality Control</h2>
+<div style="position: absolute; left: 5%; top: 10%; width: 500px; height: auto;">
+<p><img data-src="img/QQ/cii_qq_plot.png"></p>
+</div>
+<div style="position: absolute; left: 55%; top: 10%; width: 500px; height: auto;">
+<p><img data-src="img/QQ/cii_eur_qq_plot.png"></p>
+</div>
+</section>
+<section id="supp.-8---sbayesrc" class="slide level2">
+<h2>Supp. 8 - SBayesRC</h2>
+<div class="fragment fade-out" data-fragment-index="1" style="position: absolute; left: 10%; top: 13%; width: 850px; height: auto;">
+<p><img data-src="img/pgs/pgs.jpg"></p>
+</div>
+<div class="fragment fade-in" data-fragment-index="1" style="position: absolute; left: 10%; top: 13%; width: 850px; height: auto;">
+<p><img data-src="img/pgs/sbayesrc.png"></p>
+</div>
+<div class="footer">
+<p><a href="https://www.physoc.org/magazine-articles/polygenic-scores-and-precision-genetics/">PGS graphic</a></p>
+</div>
+<div class="quarto-auto-generated-content">
+<p><img src="img/um.png" class="slide-logo"></p>
+<div class="footer footer-default">
+
+</div>
+</div>
+</section>
+    </div>
+  </div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="2025_FGS_files/libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="2025_FGS_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="2025_FGS_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="2025_FGS_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="2025_FGS_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="2025_FGS_files/libs/revealjs/plugin/multiplex/socket.io.js"></script>
+  <script src="2025_FGS_files/libs/revealjs/plugin/multiplex/multiplex.js"></script>
+  <script src="2025_FGS_files/libs/revealjs/plugin/appearance/appearance.js"></script>
+  <script src="2025_FGS_files/libs/revealjs/plugin/reveal-pointer/pointer.js"></script>
+  <script src="2025_FGS_files/libs/revealjs/plugin/simplemenu/simplemenu.js"></script>
+  <script src="2025_FGS_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="2025_FGS_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="2025_FGS_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="2025_FGS_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="2025_FGS_files/libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': false,
+'previewLinksAuto': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': false,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":false},
+'multiplex': {"secret":"17468334344842348536","id":"db8b4832529cda78","url":"https://reveal-multiplex.glitch.me/"},
+'appearance': {"hideagain":true,"delay":300,"debug":false,"appearevent":"slidetransitionend","autoappear":false,"autoelements":false,"appearparents":false},
+'pointer': {"key":"q","color":"red","pointerSize":16,"alwaysVisible":false},
+'simplemenu': {"menubarclass":"menubar","menuclass":"menu","activeclass":"active","activeelement":"li","flat":true,"barhtml":{"header":"<div class='menubar'><a class='logo' href='#'><img src='img/drog_horiz.png' style='width: 250px; padding-left: 30px;'></a><ul class='menu'></ul><div class='slide-number'></div><div>","footer":""},"scale":0.6},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: true,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'none',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1050,
+
+        height: 700,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        math: {
+          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, Appearance, RevealPointer, Simplemenu, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    <script id="quarto-html-after-body" type="application/javascript">
+    window.document.addEventListener("DOMContentLoaded", function (event) {
+      const toggleBodyColorMode = (bsSheetEl) => {
+        const mode = bsSheetEl.getAttribute("data-mode");
+        const bodyEl = window.document.querySelector("body");
+        if (mode === "dark") {
+          bodyEl.classList.add("quarto-dark");
+          bodyEl.classList.remove("quarto-light");
+        } else {
+          bodyEl.classList.add("quarto-light");
+          bodyEl.classList.remove("quarto-dark");
+        }
+      }
+      const toggleBodyColorPrimary = () => {
+        const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+        if (bsSheetEl) {
+          toggleBodyColorMode(bsSheetEl);
+        }
+      }
+      toggleBodyColorPrimary();  
+      const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+      tabsets.forEach(function(tabset) {
+        const tabby = new Tabby('#' + tabset.id);
+      });
+      const isCodeAnnotation = (el) => {
+        for (const clz of el.classList) {
+          if (clz.startsWith('code-annotation-')) {                     
+            return true;
+          }
+        }
+        return false;
+      }
+      const onCopySuccess = function(e) {
+        // button target
+        const button = e.trigger;
+        // don't keep focus
+        button.blur();
+        // flash "checked"
+        button.classList.add('code-copy-button-checked');
+        var currentTitle = button.getAttribute("title");
+        button.setAttribute("title", "Copied!");
+        let tooltip;
+        if (window.bootstrap) {
+          button.setAttribute("data-bs-toggle", "tooltip");
+          button.setAttribute("data-bs-placement", "left");
+          button.setAttribute("data-bs-title", "Copied!");
+          tooltip = new bootstrap.Tooltip(button, 
+            { trigger: "manual", 
+              customClass: "code-copy-button-tooltip",
+              offset: [0, -8]});
+          tooltip.show();    
+        }
+        setTimeout(function() {
+          if (tooltip) {
+            tooltip.hide();
+            button.removeAttribute("data-bs-title");
+            button.removeAttribute("data-bs-toggle");
+            button.removeAttribute("data-bs-placement");
+          }
+          button.setAttribute("title", currentTitle);
+          button.classList.remove('code-copy-button-checked');
+        }, 1000);
+        // clear code selection
+        e.clearSelection();
+      }
+      const getTextToCopy = function(trigger) {
+          const codeEl = trigger.previousElementSibling.cloneNode(true);
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+      }
+      const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+        text: getTextToCopy
+      });
+      clipboard.on('success', onCopySuccess);
+      if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+        // For code content inside modals, clipBoardJS needs to be initialized with a container option
+        // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+        const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+          text: getTextToCopy,
+          container: window.document.getElementById('quarto-embedded-source-code-modal')
+        });
+        clipboardModal.on('success', onCopySuccess);
+      }
+        var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+        var mailtoRegex = new RegExp(/^mailto:/);
+          var filterRegex = new RegExp('/' + window.location.host + '/');
+        var isInternal = (href) => {
+            return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+        }
+        // Inspect non-navigation links and adorn them if external
+     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+        for (var i=0; i<links.length; i++) {
+          const link = links[i];
+          if (!isInternal(link.href)) {
+            // undo the damage that might have been done by quarto-nav.js in the case of
+            // links that we want to consider external
+            if (link.dataset.originalHref !== undefined) {
+              link.href = link.dataset.originalHref;
+            }
+          }
+        }
+      function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+        const config = {
+          allowHTML: true,
+          maxWidth: 500,
+          delay: 100,
+          arrow: false,
+          appendTo: function(el) {
+              return el.closest('section.slide') || el.parentElement;
+          },
+          interactive: true,
+          interactiveBorder: 10,
+          theme: 'light-border',
+          placement: 'bottom-start',
+        };
+        if (contentFn) {
+          config.content = contentFn;
+        }
+        if (onTriggerFn) {
+          config.onTrigger = onTriggerFn;
+        }
+        if (onUntriggerFn) {
+          config.onUntrigger = onUntriggerFn;
+        }
+          config['offset'] = [0,0];
+          config['maxWidth'] = 700;
+        window.tippy(el, config); 
+      }
+      const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+      for (var i=0; i<noterefs.length; i++) {
+        const ref = noterefs[i];
+        tippyHover(ref, function() {
+          // use id or data attribute instead here
+          let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+          try { href = new URL(href).hash; } catch {}
+          const id = href.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note) {
+            return note.innerHTML;
+          } else {
+            return "";
+          }
+        });
+      }
+      const findCites = (el) => {
+        const parentEl = el.parentElement;
+        if (parentEl) {
+          const cites = parentEl.dataset.cites;
+          if (cites) {
+            return {
+              el,
+              cites: cites.split(' ')
+            };
+          } else {
+            return findCites(el.parentElement)
+          }
+        } else {
+          return undefined;
+        }
+      };
+      var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+      for (var i=0; i<bibliorefs.length; i++) {
+        const ref = bibliorefs[i];
+        const citeInfo = findCites(ref);
+        if (citeInfo) {
+          tippyHover(citeInfo.el, function() {
+            var popup = window.document.createElement('div');
+            citeInfo.cites.forEach(function(cite) {
+              var citeDiv = window.document.createElement('div');
+              citeDiv.classList.add('hanging-indent');
+              citeDiv.classList.add('csl-entry');
+              var biblioDiv = window.document.getElementById('ref-' + cite);
+              if (biblioDiv) {
+                citeDiv.innerHTML = biblioDiv.innerHTML;
+              }
+              popup.appendChild(citeDiv);
+            });
+            return popup.innerHTML;
+          });
+        }
+      }
+    });
+    </script>
+    
+
+</body></html>

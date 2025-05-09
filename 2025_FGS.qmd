@@ -18,7 +18,6 @@ format:
     chalkboard: false
     menu: false
     multiplex: true
-    embed-resources: true
     simplemenu:
         flat: true
         barhtml:

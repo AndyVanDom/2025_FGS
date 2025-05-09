@@ -1,0 +1,1597 @@
+---
+title: 'Uncovering the genetic relationship between dementia and age-related hearing loss'
+format:
+  revealjs:
+    auto-animate-unmatched: false
+    section-divs: false
+    title-slide-attributes:
+        data-state: "hide-menubar"
+    logo: img/um.png
+    css: seminar.css
+    #subtitles:
+        #isVisible: true
+    slide-number: true
+    progress: true
+    theme: default
+    controls: true
+    controls-layout: edges
+    chalkboard: false
+    menu: false
+    multiplex: true
+    embed-resources: true
+    simplemenu:
+        flat: true
+        barhtml:
+            header: "<div class='menubar'><a class='logo' href='#'><img src='img/drog_horiz.png' style='width: 250px; padding-left: 30px;'></a><ul class='menu'></ul><div class='slide-number'></div><div>"
+        scale: 0.6
+revealjs-plugins:
+  - appearance
+  - pointer
+  - simplemenu
+  #- subtitles
+author:
+  - name: Andrew Van Domelen
+    email: vandomea@myumanitoba.ca
+    affiliations: University of Manitoba, Department of Biochemistry and Medical Genetics
+date: "March 5, 2025"
+
+---
+
+## What is dementia? {data-name="Background" auto-animate="true"}
+### A common neurodegenerative disorder {style="color: gray; font-size: 23pt !important;"}
+
+::: {.fragment fragment-index='1' .fade-in}
+::: {.fragment fragment-index=3 .semi-fade-out}
+Symptoms
+:::
+:::
+
+::: {.fragment fragment-index='3' .fade-in}
+Demographics
+:::
+
+
+::: {data-id="brain" .fragment fragment-index='1' .slide-in-from-top style="position: absolute; top: 45%; left: 50%; width: 275px; height: auto;"}
+![](img/dem/brain.png)
+:::
+
+
+::: {.fragment fragment-index='1' .slide-in-from-bottom-then-top style="position: absolute; left: 78%; top: 48%; width: 200px; height: auto;"}
+![](img/dem/dem_mem.png){data-id="cog1"}
+:::
+
+::: {.fragment fragment-index='1' .slide-in-from-bottom-then-top style="position: absolute; left: 29%; top: 48%; width: 200px; height: auto;"}
+![](img/dem/dem_com.png){data-id="cog2"}
+:::
+
+::: {.fragment fragment-index='1' .slide-in-from-bottom-then-top style="position: absolute; left: 39%; top: 20%; width: 200px; height: auto;"}
+![](img/dem/dem_coord.png){data-id="cog3"}
+:::
+
+::: {.fragment fragment-index='1' .slide-in-from-bottom-then-top style="position: absolute; left: 67%; top: 20%; width: 200px; height: auto;"}
+![](img/dem/dem_disor.png){data-id="cog4"}
+:::
+
+::: {.fragment fragment-index='2' .slide-in-from-bottom-then-top style="position: absolute; left: 78%; top: 48%; width: 200px; height: auto;"}
+![](img/dem/dem_pers.png){data-id="psych1"}
+:::
+
+::: {.fragment fragment-index='2' .slide-in-from-bottom-then-top style="position: absolute; left: 29%; top: 48%; width: 200px; height: auto;"}
+![](img/dem/dem_dep.png){data-id="psych2"}
+:::
+
+::: {.fragment fragment-index='2' .slide-in-from-bottom-then-top style="position: absolute; left: 39%; top: 20%; width: 200px; height: auto;"}
+![](img/dem/dem_anx.png){data-id="psych3"}
+:::
+
+::: {.fragment fragment-index='2' .slide-in-from-bottom-then-top style="position: absolute; left: 67%; top: 20%; width: 200px; height: auto;"}
+![](img/dem/dem_par.png){data-id="psych4"}
+:::
+
+
+::: {.fragment fragment-index='3' .fade-in style="position: absolute; left: 78%; top: 38%; width: 265px; height: auto;"}
+![](img/dem/dem_demo_sex.png){auto-animate-id="demogr1"}
+:::
+
+::: {.fragment fragment-index='3' .fade-in style="position: absolute; left: 17%; top: 38%; width: 350px; height: auto;"}
+![](img/dem/dem_demo_eth.png){auto-animate-id="demogr2"}
+:::
+
+::: {.fragment fragment-index='3' .fade-in style="position: absolute; left: 51%; top: 9%; width: 250px; height: auto;"}
+![](img/dem/dem_demo_age.png){auto-animate-id="demogr3"}
+:::
+
+::: {data-id="subtype1" style="position: absolute; left: 300px; top: -4000px; width: 950px; height: auto;"}
+![](img/dem/dem_sub_umb.png)
+:::
+
+::: {data-id="subtype2" style="position: absolute; left: 300px; top: 6000px; width: 950px; height: auto;"}
+![](img/dem/dem_sub_text.png)
+:::
+
+## What is dementia? {auto-animate="true"}
+### A common neurodegenerative disorder {style="color: gray; font-size: 23pt !important;"}
+
+::: {style="opacity: 50%;"}
+Symptoms
+
+Demographics
+:::
+
+Subtypes
+
+
+::: {data-id="subtype1" style="position: absolute; left: 23%; top: 0px; width: 950px; height: auto;"}
+![](img/dem/dem_sub_umb.png)
+:::
+
+::: {data-id="subtype2" style="position: absolute; left: 23%; top: 0px; width: 950px; height: auto;"}
+![](img/dem/dem_sub_text_2.png)
+:::
+
+## What is dementia? {auto-animate="true"}
+### A common neurodegenerative disorder {style="color: gray; font-size: 23pt !important;"}
+
+::: {style="opacity: 50%;"}
+Symptoms
+
+Demographics
+
+Subtypes
+:::
+
+Pathologies
+
+
+
+::: {.dementia-text-box style="text-align: center; background: #385E9D; color: white; position: absolute; top: 50px; left: 600px; width: 450px; padding: 0.1em;"}
+
+PROTEIN AGGREGATES
+
+(tau, amyloids, others)
+
+:::
+
+::: {.fragment .fade-in-then-out fragment-index=1 data-id="amyloid-salahuddin" style="position: absolute; left: 400px; top: 200px; width: 950px; height: auto;"}
+![](img/dem/amyloids.jpeg)
+:::
+
+::: {.fragment .fade-in fragment-index=2 .dementia-text-box style="text-align: center;  background: #385E9D; color: white; position: absolute; top: 205px; left: 600px; width: 450px; padding: 0.1em;"}
+
+LOSS OF NEURONS and SYNAPSE CONNECTIONS
+:::
+
+::: {.fragment .fade-in fragment-index=3 .dementia-text-box style="text-align: center; background: #385E9D; color: white; position: absolute; top: 350px; left: 600px; width: 450px; padding: 0.1em;"}
+
+CHRONIC INFLAMMATION
+:::
+
+::: {.fragment .fade-in fragment-index=4 .dementia-text-box style="text-align: center; background: #385E9D; color: white; position: absolute; top: 445px; left: 600px; width: 450px; padding: 0.1em;"}
+
+GENETICS
+:::
+
+
+
+## [What are the [risk factors]{style="color: var(--lab-blue);"} for dementia?]{style="font-size: 35pt;"} {.scrollable}
+### ([Global](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(24)01296-0/fulltext){target="_blank"})
+
+
+:::: {.fragment fragment-index=1 .fade-in-then-out style="position: absolute; left: 200px; top: 100px; width: 750px; height: auto;"}
+![](img/dem/dem_lancet.jpg)
+
+::: {data-id="4em-space" style="display:inline-block; height:4em;"}
+:::
+::::
+
+:::: {.fragment fragment-index=2 .fade-in style="position: absolute; left: 200px; top: 100px; width: 750px; height: auto;"}
+![](img/dem/dem_lancet_hl.jpeg)
+
+::: {data-id="4em-space" style="display:inline-block; height:4em;"}
+:::
+::::
+
+## [What are the [risk factors]{style="color: var(--lab-blue);"} for dementia?]{style="font-size: 35pt;"} {.scrollable}
+### ([Canada](https://www.sciencedirect.com/science/article/pii/S2274580724006800?via%3Dihub){target="_blank"})
+
+:::: {.fragment fragment-index=1 .fade-in-then-out style="position: absolute; left: 150px; top: 100px; width: 850px; height: auto;"}
+![](img/dem/dem_son.jpg)
+
+::: {data-id="4em-space" style="display:inline-block; height:4em;"}
+:::
+::::
+
+:::: {.fragment fragment-index=2 .fade-in style="position: absolute; left: 150px; top: 100px; width: 850px; height: auto;"}
+![](img/dem/dem_son_hl.jpg)
+
+::: {data-id="4em-space" style="display:inline-block; height:4em;"}
+:::
+::::
+
+
+## How are hearing loss and dementia connected? {auto-animate="true"}
+
+
+:::: {.columns}
+::: {.column .fragment fragment-index=1 .fade-in-then-out style="position: absolute; left: 0%;"}
+[**Causal Relationship**]{auto-animate-id="cause" style="font-size: 35pt; color: var(--lab-blue);"}
+:::
+
+::: {.column .fragment fragment-index=2 .fade-in style="position: absolute; left: 0%;"}
+[**Common Cause**]{auto-animate-id="mediate" style="font-size: 35pt; color: var(--lab-blue);"}
+:::
+::::
+
+::: {.fragment fragment-index=1 .fade-in-then-out .slow1 style="position: absolute; top: 265px; left: 25%; width: 750px;"}
+![](img/arhl-dem/causal.png)
+:::
+
+::: {.fragment fragment-index=2 .fade-in-then-out .slow1 style="position: absolute; top: 175px; left: 45%; width: 400px;"}
+![](img/arhl-dem/mediate.png)
+:::
+
+::: {data-id="causal-sml" style="position: absolute; top: -103%; left: 86%; width: 200px; opacity: 0.5;"}
+![](img/arhl-dem/causal.png)
+:::
+
+## [Can hearing loss [cause]{style="color: var(--lab-blue);"} dementia?]{style="font-size: 45pt;"} {auto-animate="true"}
+
+::: {data-id="causal-sml" style="position: absolute; top: -3%; left: 86%; width: 200px; opacity: 0.5;"}
+![](img/arhl-dem/causal.png)
+:::
+
+::: {.fragment fragment-index=1 .fade-in}
+::: {.fragment fragment-index=3 .semi-fade-out}
+Altered cognitive load
+:::
+:::
+
+::: {.fragment fragment-index=3 .fade-in-then-semi-out}
+Neuroplastic reorganization
+:::
+
+::: {.fragment fragment-index=4 .fade-in style="width: 800px; color: var(--lab-yellow);"}
+[**Can we use genetics to explore causality?**]{style="font-size:45pt;"}
+:::
+
+
+::: {.fragment fragment-index=1 .fade-in-then-out .slow1 style="position: absolute; top: 125px; left: 450px;"}
+![](img/MR/cog_load1.jpeg){style="width:400px;"}
+:::
+
+::: {.fragment fragment-index=2 .fade-in-then-out .slow1 style="position: absolute; top: 125px; left: 450px;"}
+![](img/MR/cog_load.jpg){style="width:400px;"}
+:::
+
+::: {.fragment fragment-index=3 .fade-in-then-out .slow1 style="position: absolute; top: 100px; left: 550px;"}
+![](img/dem/brain_sens.png){style="width:500px;"}
+:::
+
+
+
+## [Mendelian Randomization ([MR]{style="color: var(--lab-blue);"}) to explore [causality]{style="color: var(--lab-blue);"}]{style="font-size: 35pt;"} {auto-animate="true"}
+
+:::: {.fragment fragment-index=1 .fade-out}
+::: {style="position: absolute; top: 25px; left: 20px; width: 1000px;"}
+![](img/MR/mr1.png)
+:::
+
+::: { style="position: absolute; top: 200px; left: 425px; width: 225px;"}
+![](img/MR/ARHL.png)
+:::
+
+::: { style="position: absolute; top: 225px; left: 750px; width: 225px;"}
+![](img/MR/dem_brain.png)
+:::
+::::
+
+::: {.fragment fragment-index=1 .fade-in-then-out style="position: absolute; top: 0px; left: 50px; width: 1000px;"}
+![](img/MR/mr2.png)
+:::
+
+::: {.fragment fragment-index=2 .fade-in-then-out style="position: absolute; top: 0px; left: 50px; width: 1000px;"}
+![](img/MR/mr3.png)
+:::
+
+::: {.fragment fragment-index=3 .fade-in-then-out style="position: absolute; top: 0px; left: 50px; width: 1000px;"}
+![](img/MR/mr4.png)
+:::
+
+::: {.fragment fragment-index=4 .fade-in-then-out style="position: absolute; top: 0px; left: 50px; width: 1000px;"}
+![](img/MR/mr5.png)
+:::
+
+::: {.fragment fragment-index=5 .fade-in-then-out style="position: absolute; top: 0px; left: 50px; width: 1000px;"}
+![](img/MR/mr6.png)
+:::
+
+::: {.fragment fragment-index=6 .fade-in-then-out style="position: absolute; top: 0px; left: 50px; width: 1000px;"}
+![](img/MR/mr7.png)
+:::
+
+:::: {.fragment fragment-index=7 .fade-in}
+::: {style="position: absolute; top: 25px; left: 20px; width: 1000px;"}
+![](img/MR/mr1.png)
+:::
+
+::: { style="position: absolute; top: 200px; left: 425px; width: 225px;"}
+![](img/MR/ARHL.png)
+:::
+
+::: {style="position: absolute; top: 225px; left: 750px; width: 225px;"}
+![](img/MR/dem_brain.png)
+:::
+::::
+
+
+::: {data-id="mediate" style="position: absolute; top: -100%; left: 50%; width: 125px; opacity: 0.5;"}
+![](img/arhl-dem/mediate.png)
+:::
+
+## Do hearing loss and dementia share a [common cause]{style="color: var(--lab-blue);"}? {auto-animate="true"}
+
+::: {.fragment fragment-index=1 .fade-in}
+Inflammation
+:::
+
+::: {.fragment fragment-index=2 .fade-in}
+Poor Vascular Health
+:::
+
+::: {.fragment fragment-index=3 .fade-in}
+Protein Aggregates
+:::
+
+::: {.fragment fragment-index=4 .fade-in}
+Loss of Neurons/Synapses
+:::
+
+::: {.fragment fragment-index=5 .fade-in}
+Genetic Factors
+:::
+
+::: {data-id="mediate" style="position: absolute; top: 6%; left: 50%; width: 125px; opacity: 0.5;"}
+![](img/arhl-dem/mediate.png)
+:::
+
+::: {.fragment fragment-index=1 .fade-in style="position: absolute; top: 23%; left: 43%; width: 525px;"}
+::: {.fragment fragment-index=6 .fade-out}
+![](img/mtag/common.png)
+:::
+:::
+
+::: {.fragment fragment-index=6 .fade-in style="position: absolute; top: 34%; left: 47%; width: 500px; color: var(--lab-yellow); text-align: center;"}
+[**Can we use genetics to find a common cause?**]{style="font-size:50pt;"}
+:::
+
+
+## [[MTAG]{style="color: var(--lab-blue);"} to find a [common cause]{style="color: var(--lab-blue);"}]{style="font-size: 35pt;"}{auto-animate="true"}
+### (Multi-Trait Analysis of GWAS) {style="color: gray;"}
+
+::: {data-id="mtag1" style="position: absolute; top: 150px; left: 25px; width: 1000px;"}
+![](img/mtag/mtag1.png)
+:::
+
+::: {style="position: absolute; top: 120px; left: 2500px; width: 500px;" data-id="mtag"}
+![](img/mtag/mtag2.png)
+:::
+
+## [[MTAG]{style="color: var(--lab-blue);"} to find a [common cause]{style="color: var(--lab-blue);"}]{style="font-size: 35pt;"}{auto-animate="true"}
+### (Multi-Trait Analysis of GWAS) {style="color: gray;"}
+
+::: {data-id="mtag1" style="position: absolute; top: 20%; left: 0%; width: 450px;"}
+![](img/mtag/mtag1.png)
+:::
+
+
+::: {style="position: absolute; top: 120px; left: 500px; width: 500px;" data-id="mtag"}
+![](img/mtag/mtag2.png)
+:::
+
+
+::: {style="position: absolute; top: 153%; left: 154%; width: 400px;" data-id="fine-map"}
+![](img/mtag/fine-map.png)
+:::
+
+## [[MTAG]{style="color: var(--lab-blue);"} to find a [common cause]{style="color: var(--lab-blue);"}]{style="font-size: 35pt;"}{auto-animate="true" visibility="hidden"}
+### (Multi-Trait Analysis of GWAS) {style="color: gray;"}
+
+::: {style="width: 450px;"}
+- Increases power to detect associations when the traits are genetically correlated
+- Identifies variants contributing to both hearing loss and dementia
+:::
+
+::: {style="position: absolute; top: 120px; left: 500px; width: 500px;" data-id="mtag"}
+![](img/mtag/mtag2.png)
+:::
+
+::: {style="position: absolute; top: 153%; left: 154%; width: 400px;" data-id="fine-map"}
+![](img/mtag/fine-map.png)
+:::
+
+## [[MTAG]{style="color: var(--lab-blue);"} to find a [common cause]{style="color: var(--lab-blue);"}]{style="font-size: 35pt;"}{auto-animate="true"}
+### (Multi-Trait Analysis of GWAS) {style="color: gray;"}
+
+::: {style="width: 400px;"}
+- Fine-mapping
+- Enrichment Analysis
+:::
+
+::: {style="position: absolute; top: 120px; left: 500px; width: 500px; opacity: 0.2;" data-id="mtag"}
+![](img/mtag/mtag2.png)
+:::
+
+::: {style="position: absolute; top: 23%; left: 54%; width: 400px;" data-id="fine-map"}
+![](img/mtag/fine-map.png)
+:::
+
+## [[No clear consensus]{style="color: var(--lab-blue);"} on genetic relationship]{style="font-size:30pt;"}
+
+:::: {.fragment fragment-index=1 .fade-out style="position: absolute; top: 75px; left: 0px;"}
+````{=html}
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px !important;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px !important;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top; font-size:12pt !important;}
+</style>
+<table class="tg"><thead>
+  <tr>
+    <th class="tg-0pky">Paper</th>
+    <th class="tg-0pky">Study Design</th>
+    <th class="tg-0pky">Sample Size</th>
+    <th class="tg-0pky">Population</th>
+    <th class="tg-0pky">Hearing Loss Phenotype</th>
+    <th class="tg-0pky">Cog. Phenotype</th>
+    <th class="tg-0pky">Finding</th>
+  </tr></thead>
+<tbody>
+  <tr>
+    <td class="tg-0pky">Mitchell 2020</td>
+    <td class="tg-0pky">GWAS, MR, PGS</td>
+    <td class="tg-0pky">250k</td>
+    <td class="tg-0pky">European</td>
+    <td class="tg-0pky">Self-reported Hearing Difficulty</td>
+    <td class="tg-0pky">Clinical Diagnosis, 'AD-by-Proxy'</td>
+    <td class="tg-0pky">No Causal Effect, AD PGS predicts H. Diff.</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Brenowitz 2020</td>
+    <td class="tg-0pky">MR, PGS</td>
+    <td class="tg-0pky">245k</td>
+    <td class="tg-0pky">European</td>
+    <td class="tg-0pky">Digital Triplet Test, Self-report</td>
+    <td class="tg-0pky">Verbal Reasoning test score, AD PGS (based on 25 genetic loci)</td>
+    <td class="tg-0pky">Association between AD PGS and poor speech-in-noise hearing, No Association between Hearing PGS and cognitive scores.</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Xu 2024</td>
+    <td class="tg-0pky">MR, Cross-sectional Study</td>
+    <td class="tg-0pky">500k</td>
+    <td class="tg-0pky">European and Chinese</td>
+    <td class="tg-0pky">Self-report, Audiometry</td>
+    <td class="tg-0pky">Battery of Cognitive Tests</td>
+    <td class="tg-0pky">Hearing Loss is a risk factor for cognitive impairment</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Wang 2022</td>
+    <td class="tg-0pky">PGS, cross-sectional and longitudinal analysis</td>
+    <td class="tg-0pky">500k</td>
+    <td class="tg-0pky">European and Chinese</td>
+    <td class="tg-0pky">Self-report, Speech-in-Noise Test</td>
+    <td class="tg-0pky">Battery of Cognitive Tests, Imaging Data, cerebrospinal fluid Protein levels (tau, amyloid-beta)</td>
+    <td class="tg-0pky">Hearing Impairment is associated with cognitive decline, brain atrophy, and tau levels</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Abidin 2021</td>
+    <td class="tg-0pky">MR, Gene-set and function enrichment</td>
+    <td class="tg-0pky">250k</td>
+    <td class="tg-0pky">European</td>
+    <td class="tg-0pky">Self-report</td>
+    <td class="tg-0pky">Clinical Diagnosis</td>
+    <td class="tg-0pky">No Genetic Correlation, Possible causal relationship from AD to HL via APOE locus</td>
+  </tr>
+  <!-- made here: https://www.tablesgenerator.com/html_tables -->
+  
+  <tfoot>
+    <tr>
+      <td colspan="7" style="text-align:left; padding-top: 10px; font-size: 12pt">
+        <strong>Acronyms:</strong> <strong>AD</strong> = Alzheimer's Disease; <strong>GWAS</strong> = Genome-Wide Association Study; ; <strong>HL</strong> = Hearing Loss; <strong>MR</strong> = Mendelian Randomization; <strong>PGS</strong> = Polygenic Score.
+      </td>
+    </tr>
+</tfoot>
+
+</tbody>
+</table>
+
+
+````
+::::
+
+:::: {.fragment fragment-index=1 .fade-in-then-out style="position: absolute; top: 75px; left: 0px;"}
+````{=html}
+
+<!-- colored in "Finding" cells -->
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px !important;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px !important;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top; font-size: 12pt !important;}
+</style>
+<table class="tg"><thead>
+  <tr>
+    <th class="tg-0pky">Paper</th>
+    <th class="tg-0pky">Study Design</th>
+    <th class="tg-0pky">Sample Size</th>
+    <th class="tg-0pky">Population</th>
+    <th class="tg-0pky">Hearing Loss Phenotype</th>
+    <th class="tg-0pky">Cog. Phenotype</th>
+    <th class="tg-0pky">Finding</th>
+  </tr></thead>
+<tbody>
+  <tr>
+    <td class="tg-0pky">Mitchell 2020</td>
+    <td class="tg-0pky">GWAS, MR, PGS</td>
+    <td class="tg-0pky">250k</td>
+    <td class="tg-0pky">European</td>
+    <td class="tg-0pky">Self-reported Hearing Difficulty</td>
+    <td class="tg-0pky">Clinical Diagnosis, 'AD-by-Proxy'</td>
+    <td class="tg-0pky" style="background: #ffffa0;">No Causal Effect, AD PGS predicts H. Diff.</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Brenowitz 2020</td>
+    <td class="tg-0pky">MR, PGS</td>
+    <td class="tg-0pky">245k</td>
+    <td class="tg-0pky">European</td>
+    <td class="tg-0pky">Digital Triplet Test, Self-report</td>
+    <td class="tg-0pky">Verbal Reasoning test score, AD PGS (based on 25 genetic loci)</td>
+    <td class="tg-0pky" style="background: #ffffa0;">Association between AD PGS and poor speech-in-noise hearing, No Association between Hearing PGS and cognitive scores.</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Xu 2024</td>
+    <td class="tg-0pky">MR, Cross-sectional Study</td>
+    <td class="tg-0pky">500k</td>
+    <td class="tg-0pky">European and Chinese</td>
+    <td class="tg-0pky">Self-report, Audiometry</td>
+    <td class="tg-0pky">Battery of Cognitive Tests</td>
+    <td class="tg-0pky" style="background: #c3f78c;">Hearing Loss is a risk factor for cognitive impairment</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Wang 2022</td>
+    <td class="tg-0pky">PGS, cross-sectional and longitudinal analysis</td>
+    <td class="tg-0pky">500k</td>
+    <td class="tg-0pky">European and Chinese</td>
+    <td class="tg-0pky">Self-report, Speech-in-Noise Test</td>
+    <td class="tg-0pky">Battery of Cognitive Tests, Imaging Data, cerebrospinal fluid protein levels (tau, amyloid-beta)</td>
+    <td class="tg-0pky" style="background: #c3f78c;">Hearing Impairment is associated with cognitive decline, brain atrophy, and tau levels</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Abidin 2021</td>
+    <td class="tg-0pky">MR, Gene-set and function enrichment</td>
+    <td class="tg-0pky">250k</td>
+    <td class="tg-0pky">European</td>
+    <td class="tg-0pky">Self-report</td>
+    <td class="tg-0pky">Clinical Diagnosis</td>
+    <td class="tg-0pky" style="background: #ff8282;">No Genetic Correlation, Possible causal relationship from AD to HL via APOE locus</td>
+  </tr>
+  <!-- made here: https://www.tablesgenerator.com/html_tables -->
+  
+    <tfoot>
+    <tr>
+      <td colspan="7" style="text-align:left; padding-top: 10px; font-size: 12pt">
+        <strong>Acronyms:</strong> <strong>AD</strong> = Alzheimer's Disease; <strong>GWAS</strong> = Genome-Wide Association Study; ; <strong>HL</strong> = Hearing Loss; <strong>MR</strong> = Mendelian Randomization; <strong>PGS</strong> = Polygenic Score.
+      </td>
+    </tr>
+</tfoot>
+
+</tbody></table>
+
+
+````
+::::
+
+:::: {.fragment fragment-index=2 .fade-in style="position: absolute; top: 75px; left: 0px;"}
+::: {.fragment fragment-index=3 .semi-fade-out}
+````{=html}
+
+<!-- Highlighting Phenotypes -->
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px !important;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px !important;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top; font-size: 12pt !important;}
+</style>
+<table class="tg"><thead>
+  <tr>
+    <th class="tg-0pky">Paper</th>
+    <th class="tg-0pky">Study Design</th>
+    <th class="tg-0pky">Sample Size</th>
+    <th class="tg-0pky">Population</th>
+    <th class="tg-0pky">Hearing Loss Phenotype</th>
+    <th class="tg-0pky">Cog. Phenotype</th>
+    <th class="tg-0pky">Finding</th>
+  </tr></thead>
+<tbody>
+  <tr>
+    <td class="tg-0pky">Mitchell 2020</td>
+    <td class="tg-0pky">GWAS, MR, PGS</td>
+    <td class="tg-0pky">250k</td>
+    <td class="tg-0pky">European</td>
+    <td class="tg-0pky" style="background: #e5e4e0;">Self-reported Hearing Difficulty</td>
+    <td class="tg-0pky" style="background: #e5e4e0;">Clinical Diagnosis, 'AD-by-Proxy'</td>
+    <td class="tg-0pky" style="background: #ffffa0;">No Causal Effect, AD PGS predicts H. Diff.</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Brenowitz 2020</td>
+    <td class="tg-0pky">MR, PGS</td>
+    <td class="tg-0pky">245k</td>
+    <td class="tg-0pky">European</td>
+    <td class="tg-0pky" style="background: #e5e4e0;">Digital Triplet Test, Self-report</td>
+    <td class="tg-0pky" style="background: #e5e4e0;">Verbal Reasoning test score, AD PGS (based on 25 genetic loci)</td>
+    <td class="tg-0pky" style="background: #ffffa0;">Association between AD PGS and poor speech-in-noise hearing, No Association between Hearing PGS and cognitive scores.</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Xu 2024</td>
+    <td class="tg-0pky">MR, Cross-sectional Study</td>
+    <td class="tg-0pky">500k</td>
+    <td class="tg-0pky">European and Chinese</td>
+    <td class="tg-0pky" style="background: #e5e4e0;">Self-report, Audiometry</td>
+    <td class="tg-0pky" style="background: #e5e4e0;">Battery of Cognitive Tests</td>
+    <td class="tg-0pky" style="background: #c3f78c;">Hearing Loss is a risk factor for cognitive impairment</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Wang 2022</td>
+    <td class="tg-0pky">PGS, cross-sectional and longitudinal analysis</td>
+    <td class="tg-0pky">500k</td>
+    <td class="tg-0pky">European and Chinese</td>
+    <td class="tg-0pky" style="background: #e5e4e0;">Self-report, Speech-in-Noise Test</td>
+    <td class="tg-0pky" style="background: #e5e4e0;">Battery of Cognitive Tests, Imaging Data, cerebrospinal fluid Protein levels (tau, amyloid-beta)</td>
+    <td class="tg-0pky" style="background: #c3f78c;">Hearing Impairment is associated with cognitive decline, brain atrophy, and tau levels</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Abidin 2021</td>
+    <td class="tg-0pky">MR, Gene-set and function enrichment</td>
+    <td class="tg-0pky">250k</td>
+    <td class="tg-0pky">European</td>
+    <td class="tg-0pky" style="background: #e5e4e0;">Self-report</td>
+    <td class="tg-0pky" style="background: #e5e4e0;">Clinical Diagnosis</td>
+    <td class="tg-0pky" style="background: #ff8282;">No Genetic Correlation, Possible causal relationship from AD to HL via APOE locus</td>
+  </tr>
+  <!-- made here: https://www.tablesgenerator.com/html_tables -->
+  
+    <tfoot>
+    <tr>
+      <td colspan="7" style="text-align:left; padding-top: 10px; font-size: 12pt">
+        <strong>Acronyms:</strong> <strong>AD</strong> = Alzheimer's Disease; <strong>GWAS</strong> = Genome-Wide Association Study; ; <strong>HL</strong> = Hearing Loss; <strong>MR</strong> = Mendelian Randomization; <strong>PGS</strong> = Polygenic Score.
+      </td>
+    </tr>
+</tfoot>
+
+</tbody></table>
+
+
+````
+:::
+::::
+
+::: {.fragment fragment-index=3 .overview-text-box .fade-in style="color: white; background: var(--lab-yellow); position: absolute; top: 27%; left: 1%; width: 425px; padding-top: 0.1em;"}
+
+[Phenotypes]{style="text-decoration: underline;"}
+
+::: {style="font-size:23pt; text-align: center; line-height: 3;"}
+- Is "self-report" data objective?
+
+- Hearing loss is heterogenous (causes, pathologies, etc.)
+:::
+
+:::
+
+## [Evidence for a [genetic correlation]{style="color: var(--lab-blue);"} between specific hearing loss subtypes and dementia]{style="font-size: 30pt;"}
+
+::: {style="width: 400px;"}
+
+::: {.fragment fragment-index=1 .fade-in}
+::: {.fragment fragment-index=4 .semi-fade-out}
+- Model-based hearing loss phenotype
+:::
+:::
+
+::: {.fragment fragment-index=4 .fade-in}
+- Genes linked to dementia were also associated with **metabolic** hearing loss 
+:::
+
+:::
+
+::: {.fragment fragment-index=1 .fade-in-then-out style="position: absolute; top: 100px; left: 500px;"}
+![](img/aim1/vaden_plot.jpeg){style="width: 450px;"}
+:::
+
+::: {.fragment fragment-index=2 .fade-in-then-out style="position: absolute; top: 100px; left: 500px;"}
+![](img/aim1/vaden_s.png){style="width: 450px;"}
+:::
+
+::: {.fragment fragment-index=3 .fade-in-then-out style="position: absolute; top: 100px; left: 500px;"}
+![](img/aim1/vaden_m.png){style="width: 450px;"}
+:::
+
+::: {.fragment fragment-index=4 .fade-in .overview-text-box style="color: white; background: gray; position: absolute; top: 150px; left: 500px; width: 500px; font-size: 50pt; padding-top: 0.1em;"}
+*ARHGEF28*
+
+*IPO7*
+
+*FUS*
+:::
+
+
+## Project Overview {data-name="Overview" auto-animate="true"}
+
+::: {.fragment .fade-in fragment-index=1 .overview-text-box style="color: white; background: #385E9D; position: absolute; top: 100px; left: 50px; width: 1000px;"}
+
+[Hypothesis]{style="text-decoration: underline;"}
+
+[Using clear hearing and cognitive phenotypes, we can better understand the genetic relationship between ARHL and dementia.]{style="font-size: 27pt;"}
+:::
+
+::: {.fragment .fade-in fragment-index=2 .overview-text-box data-id="aim1-box" style="text-align: center; background: gray; color: white; position: absolute; top: 300px; left: 50px; width: 450px; padding: 0.5em;"}
+
+Aim 1: Underlying Genetics
+
+::: {.fragment .fade-in fragment-index=3}
+[- Causal Relationship (MR)]{style="font-size: 23pt;"}
+:::
+
+::: {.fragment .fade-in fragment-index=4}
+[- Common Cause (MTAG)]{style="font-size: 23pt;"}
+:::
+:::
+
+::: {.fragment .fade-in fragment-index=5 .overview-text-box data-id="aim2-box" style="text-align: center; background: gray; color: white; position: absolute; top: 300px; left: 560px; width: 450px; padding: 0.5em;"}
+
+Aim 2: Prediction Model
+
+::: {.fragment .fade-in fragment-index=6}
+[- PGS robust to ancestry differences (SBayesRC)]{style="font-size: 23pt; text-align: center;"}
+:::
+
+:::
+
+## Project Overview {auto-animate="true"}
+
+::: {.overview-text-box style="color: white; background: #385E9D; position: absolute; top: 100px; left: 50px; width: 1000px;"}
+
+[Hypothesis]{style="text-decoration: underline;"}
+
+[Using clear hearing and cognitive phenotypes, we can better understand the genetic relationship between ARHL and dementia.]{style="font-size: 27pt;"}
+:::
+
+
+::: {.overview-text-box data-id="aim1-box" style="text-align: center; background: var(--lab-yellow); color: white; position: absolute; top: 300px; left: 325px; width: 450px; padding: 0.5em; z-index: 1;"}
+
+Aim 1: Underlying Genetics
+
+::: {style="font-size: 23pt;"}
+- Causal Relationship (MR)
+
+- Common Cause (MTAG)
+:::
+:::
+
+::: {.overview-text-box data-id="aim2-box" style="text-align: center; background: lightgray; opacity: 0.6; color: white; position: absolute; top: 300px; left: 760px; width: 450px; padding: 0.5em;"}
+
+Aim 2: Prediction Model
+
+[- PGS robust to ancestry differences (SBayesRC)]{style="font-size: 23pt; text-align: center;"}
+
+
+:::
+
+
+## [What [data]{style="color: var(--lab-blue);"} are we using?]{style="font-size: 40pt;"} {data-name="Data" auto-animate="true"}
+### (Canadian Longitudinal Study on Aging) {style="color: gray; font-size: 18pt !important;"}
+
+::: {.fragment fragment-index=1 .fade-in-then-out style="position: absolute; left: 250px; top: 100px; width: 600px; height: auto;"}
+![](img/aim1/clsa_desc.jpg)
+:::
+
+
+::: {.fragment fragment-index=2 .fade-in-then-out style="position: absolute; left: 250px; top: 100px; width: 600px; height: auto;"}
+![](img/aim1/clsa_desc_num_hl.jpeg)
+:::
+
+::: {.fragment fragment-index=2 .fade-in-then-out style="position: absolute; left: 850px; top: 200px; width: 600px; height: auto; color: red; font-size: 20pt;"}
+Comprehensive Cohort
+:::
+
+
+::: {.fragment fragment-index=3 .fade-in-then-out style="position: absolute; left: 250px; top: 100px; width: 600px; height: auto;"}
+![](img/aim1/clsa_desc_timeline_hl.jpeg)
+:::
+
+::: {.fragment fragment-index=3 .fade-in-then-out style="position: absolute; left: 45px; top: 350px; width: 200px; height: auto; color: red; font-size: 20pt; text-align: right;"}
+Cross-Sectional and Longitudinal Data
+:::
+
+
+
+## [What is our [dementia phenotype]{style="color: var(--lab-blue);"}?]{style="font-size: 40pt;"}
+### [Cognitive Impairment Indicator]{style="color: var(--lab-blue);"} {style="font-size: 20pt !important;"}
+
+::: {.fragment fragment-index=1 .fade-in-then-out style="width: 300px; position: absolute; top: 28%; left: 5%; font-size: 35pt;"}
+
+[Memory]{style="color: var(--lab-yellow)"}
+
+[Executive Function]{style="color: var(--lab-blue)"}
+:::
+
+::: {.fragment fragment-index=1 .fade-out style="position: absolute; left: 30%; top: 15%; width: 750px; height: auto;"}
+![](img/aim1/CII_table.png)
+:::
+
+::: {.fragment fragment-index=1 .fade-in-then-out style="position: absolute; left: 30%; top: 15%; width: 750px; height: auto;"}
+![](img/aim1/CII_table_tests.png)
+:::
+
+::: {.fragment fragment-index=1 .fade-in-then-out style="position: absolute; left: 50%; top: 20%; width: 550px; height: auto;"}
+![](img/aim1/CII_table_tests_hl.png)
+:::
+
+::: {.fragment fragment-index=2 .fade-in-then-out style="position: absolute; left: 30%; top: 15%; width: 750px; height: auto;"}
+![](img/aim1/CII_table_imp.png)
+:::
+
+::: {.fragment fragment-index=2 .fade-in-then-out style="position: absolute; left: 10%; top: 40%; width: 950px; height: auto;"}
+![](img/aim1/CII_table_imp_hl.png)
+:::
+
+
+## [What is our [hearing loss phenotype]{style="color: var(--lab-blue);"}?]{style="font-size: 40pt;"} {auto-animate="true"}
+### [ARHL subtype estimates]{style="color: var(--lab-blue);"}
+
+::: {style="position: absolute; top: 100px; left: 500px;"}
+![](img/aim1/vaden_plot.jpeg){style="width: 475px;"}
+:::
+
+:::: {style="width: 500px;"}
+Metabolic Hearing Loss
+
+Sensory Hearing Loss
+::::
+
+## [What is our [hearing loss phenotype]{style="color: var(--lab-blue);"}?]{style="font-size: 40pt;"} {auto-animate="true"}
+### [ARHL subtype estimates]{style="color: var(--lab-blue);"}
+
+::: {style="position: absolute; top: 100px; left: 500px;"}
+![](img/aim1/vaden_m.png){style="width: 475px;"}
+:::
+
+:::: {style="width: 500px;"}
+
+**Metabolic Hearing Loss**
+
+::: {style="font-size:23pt;"}
+Strongly correlated with:
+
+- Age
+- Cognitive impairment (*P*: 3x10^-9^)
+:::
+
+
+::::
+
+## [What is our [hearing loss phenotype]{style="color: var(--lab-blue);"}?]{style="font-size: 40pt;"} {auto-animate="true"}
+### [ARHL subtype estimates]{style="color: var(--lab-blue);"}
+
+::: {style="position: absolute; top: 100px; left: 500px;"}
+![](img/aim1/vaden_s.png){style="width: 475px;"}
+:::
+
+:::: {style="width: 500px;"}
+
+**Sensory Hearing Loss**
+
+::: {style="font-size:23pt;"}
+Not strongly correlated with:
+
+- Age
+- Cognitive impairment (*P*: 0.35)
+:::
+::::
+
+## What's in the CLSA [genotype data]{style="color: var(--lab-blue);"}?
+
+::: {.fragment fragment-index=1 .fade-in-then-semi-out}
+26,622 individuals
+:::
+
+::: {.fragment fragment-index=2 .fade-in-then-semi-out}
+794k genotyped variants
+
+308 million imputed variants
+:::
+
+::: {.fragment fragment-index=3 .fade-in}
+Extensive QC
+:::
+
+::: {.fragment fragment-index=1 .fade-in style="position: absolute; left: 500px; top: 60px; width: 600px; height: auto;"}
+::: {.fragment fragment-index=4 .fade-out}
+![](img/aim1/clsa/clsa_ancestry.png)
+:::
+:::
+
+::: {.fragment fragment-index=4 .fade-in style="position: absolute; left: 500px; top: 60px; width: 600px; height: auto;"}
+![](img/aim1/clsa/clsa_ancestry_hl.png)
+:::
+
+## Aim 1 - [Pre-GWAS]{style="color: var(--lab-blue);"} {auto-animate="true" data-name="Aim 1"}
+### Covariate selection {style="color: gray;"}
+
+
+::: {.fragment fragment-index=1 .slide-in-from-right-then-fade .slow3 style="position: absolute; left: 50%; top: 10%; width: 350px; height: auto;"}
+![](img/dem/dem_lancet.jpg)
+:::
+
+::::: {.fragment fragment-index=3 .fade-out}
+
+::: {.fragment fragment-index=2 .fade-in .slow2 style="position: absolute; left: 40%; top: 20%; width: 650px; height: auto;"}
+![](img/stepwise.png)
+:::
+
+:::: {style="position: absolute; top: 17%;"}
+
+::: {.fragment fragment-index=1 .slide-in-from-bottom .slow1}
+Vision Loss
+:::
+
+::: {.fragment fragment-index=1 .slide-in-from-bottom}
+Hypertension
+:::
+
+::: {.fragment fragment-index=1 .slide-in-from-bottom .slow1}
+Depression
+:::
+
+::: {.fragment fragment-index=1 .slide-in-from-bottom}
+TBI
+:::
+
+::: {.fragment fragment-index=1 .slide-in-from-bottom .slow1}
+Diabetes
+:::
+
+::: {.fragment fragment-index=1 .slide-in-from-bottom}
+Smoking and Alcohol
+:::
+
+::: {.fragment fragment-index=1 .slide-in-from-bottom .slow2}
+Social Activity
+:::
+
+::::
+:::::
+
+::: {.fragment fragment-index=3 .slide-in-from-left .slow2 style="position: absolute; left: 5%; top: 15%; width: 950px; height: auto;"}
+![](img/covars_selected.png)
+:::
+
+## Aim 1 - [Pre-GWAS]{style="color: var(--lab-blue);"} {auto-animate="true"}
+### Marker quality control {style="color: gray;"}
+
+::: {.fragment fragment-index=1 .slide-in-from-right-then-left style="position: absolute; left: 10%; top: 0%; width: 900px; height: auto;"}
+![](img/pre_QC/g1.png)
+:::
+
+::: {.fragment fragment-index=2 .slide-in-from-right-then-left style="position: absolute; left: 10%; top: 0%; width: 900px; height: auto;"}
+![](img/pre_QC/g2.png)
+:::
+
+::: {.fragment fragment-index=3 .slide-in-from-right-then-left style="position: absolute; left: 10%; top: 0%; width: 900px; height: auto;"}
+![](img/pre_QC/g3.png)
+:::
+
+::: {.fragment fragment-index=4 .slide-in-from-right-then-left style="position: absolute; left: 10%; top: 0%; width: 900px; height: auto;"}
+![](img/pre_QC/g4.png)
+:::
+
+::: {.fragment fragment-index=5 .slide-in-from-right-then-left style="position: absolute; left: 10%; top: 0%; width: 900px; height: auto;"}
+![](img/pre_QC/g5.png)
+:::
+
+::: {data-id="g6" .fragment fragment-index=6 .slide-in-from-right style="position: absolute; left: 10%; top: 0%; width: 900px; height: auto;"}
+![](img/pre_QC/g6.png)
+:::
+
+::: {data-id="s1" style="position: absolute; left: 150%; top: 0%; width: 900px; height: auto;"}
+![](img/pre_QC/s1.png)
+:::
+
+## Aim 1 - [Pre-GWAS]{style="color: var(--lab-blue);"} {auto-animate="true"}
+### Sample quality control {style="color: gray;"}
+
+::: {data-id="g6" style="position: absolute; left: -150%; top: 0%; width: 900px; height: auto;"}
+![](img/pre_QC/g6.png)
+:::
+
+::: {data-id="s1" .fragment fragment-index=1 .fade-out style="position: absolute; left: 10%; top: 0%; width: 900px; height: auto;"}
+![](img/pre_QC/s1.png)
+:::
+
+::: {.fragment fragment-index=1 .slide-in-from-right-then-left style="position: absolute; left: 10%; top: 0%; width: 900px; height: auto;"}
+![](img/pre_QC/s2.png)
+:::
+
+::: {.fragment fragment-index=2 .slide-in-from-right-then-left style="position: absolute; left: 10%; top: 0%; width: 900px; height: auto;"}
+![](img/pre_QC/s3.png)
+:::
+
+::: {.fragment fragment-index=3 .slide-in-from-right-then-left style="position: absolute; left: 10%; top: 0%; width: 900px; height: auto;"}
+![](img/pre_QC/s4.png)
+:::
+
+::: {.fragment fragment-index=4 .slide-in-from-right-then-left style="position: absolute; left: 10%; top: 0%; width: 900px; height: auto;"}
+![](img/pre_QC/s5.png)
+:::
+
+::: {.fragment fragment-index=5 .slide-in-from-right style="position: absolute; left: 10%; top: 0%; width: 900px; height: auto;"}
+![](img/pre_QC/s6.png)
+:::
+
+## Aim 1 - [GWAS]{style="color: var(--lab-blue);"} {auto-animate="true"}
+
+::: {.fragment fragment-index=1 .fade-out style="position: absolute; left: 20%; top: 10%; width: 1400px; height: auto;"}
+![](img/mtag/mtag1_dem.png)
+:::
+
+::: {.fragment fragment-index=1 .slide-in-from-bottom-then-top style="position: absolute; left: 10%; top: 10%; width: 800px; height: auto;"}
+![](img/cii_man/cii_all_man.png)
+:::
+
+::: {.fragment fragment-index=2 .slide-in-from-bottom style="position: absolute; left: 10%; top: 10%; width: 800px; height: auto;"}
+::: {.fragment fragment-index=3 .fade-out}
+![](img/cii_man/cii_eur_man.png)
+:::
+:::
+
+::: {.fragment fragment-index=3 style="position: absolute; left: 10%; top: 10%; width: 800px; height: auto;"}
+![](img/cii_man/cii_eur_man_hl.png)
+:::
+
+
+## Aim 1: [Mendelian Randomization]{style="color: var(--lab-blue);"}
+
+
+- [MR-APSS](https://github.com/YangLabHKUST/MR-APSS/tree/master)
+
+:::: {.fragment fragment-index=1 .fade-out}
+::: {style="position: absolute; top: 25px; left: 20px; width: 1000px;"}
+![](img/MR/mr1.png)
+:::
+
+::: {style="position: absolute; top: 200px; left: 425px; width: 225px;"}
+![](img/MR/ARHL.png)
+:::
+
+::: {style="position: absolute; top: 225px; left: 750px; width: 225px;"}
+![](img/MR/dem_brain.png)
+:::
+::::
+
+::: {.fragment fragment-index=1 .fade-in .slow1 style="position: absolute; top: 7%; left: 20%; width: 500px;"}
+![](img/fgbg.jpg)
+:::
+
+::: {.fragment fragment-index=2 .fade-in style="position: absolute; top: 54%; left: 68%; color: red;"}
+Bias Model
+:::
+
+::: {.fragment fragment-index=3 .fade-in style="position: absolute; top: 71%; left: 56%; color: red;"}
+MR Model
+:::
+
+## Aim 1: [MR Quality Control]{style="color: var(--lab-blue);"}
+
+
+::: {style="position: absolute; left: 0%; top: 20%; width: 450px; height: auto;"}
+![](img/cii_man/cii_eur_man.png)
+:::
+
+::: {.fragment fragment-index=1 .fade-in style="position: absolute; top: 8%; left: 33%; width: 800px; z-index: -1;"}
+![](img/MR/mr_qc.png)
+:::
+
+
+## Next steps {data-name="Future" auto-animate="true"}
+
+:::: {style="width:400px; font-size: 26pt;"}
+::: {.fragment fragment-index=2 .fade-in-then-semi-out}
+Measure causal relationship ([MR-APSS]{style="color:gray;"})
+:::
+
+::: {.fragment fragment-index=3 .fade-in-then-semi-out}
+Identify correlated genetic loci ([MTAG]{style="color:gray;"})
+:::
+
+::: {.fragment fragment-index=4 .fade-in}
+Identify likely causal variants ([PolyFun/SuSiE]{style="color:gray;"})
+:::
+::::
+
+::: {style="position: absolute; top: -4%; left: 45%; width: 500px;"}
+![](img/future/design1.png)
+:::
+
+::: {.overview-text-box .fragment fragment-index=1 .fade-in data-id="aim1-box2" style="text-align: center; background: var(--lab-yellow); color: white; position: absolute; top: 25%; left: 45%; width: 450px; padding: 0.5em; z-index: 1;"}
+
+Aim 1: Underlying Genetics
+
+::: {style="font-size: 23pt;"}
+- Causal Relationship (MR)
+:::
+
+::: {style="font-size: 23pt;"}
+- Common Cause (MTAG)
+:::
+:::
+
+::: {.fragment fragment-index=2 .fade-in .slow4 data-id="arrow" style="position: absolute; top: 22%; left: 66.75%; width: 35px;"}
+![](img/future/arrow.png)
+:::
+
+::: {.overview-text-box data-id="aim2-box2" style="text-align: center; background: gray; color: white; position: absolute; top: 153%; left: 47%; width: 450px; z-index: 1;"}
+[Aim 2: Prediction Model]{style="font-size: 23pt;"}
+:::
+
+## Next Steps {auto-animate="true"}
+
+::: {style="position: absolute; top: -5%; left: 45%; width: 500px;"}
+![](img/future/design1.png)
+:::
+
+::: {.overview-text-box data-id="aim1-box2" style="text-align: center; background: var(--lab-yellow); color: white; position: absolute; top: 24%; left: 47%; width: 450px; z-index: 1;"}
+[Aim 1: Underlying Genetics]{style="font-size: 23pt;"}
+:::
+
+::: {data-id="arrow" style="position: absolute; top: 34%; left: 66.75%; width: 35px; height"}
+![](img/future/arrow.png)
+:::
+
+::: {.overview-text-box data-id="aim2-box2" style="text-align: center; background: gray; color: white; position: absolute; top: 53%; left: 47%; width: 450px; z-index: 1;"}
+[Aim 2: Prediction Model]{style="font-size: 23pt;"}
+:::
+
+::: {.overview-text-box data-id="future" style="text-align: center; background: #385E9D; color: white; position: absolute; top: 165%; left: 47%; width: 450px; z-index: 1;"}
+[Future Directions]{style="font-size: 23pt;"}
+:::
+
+## Next steps {auto-animate="true"}
+
+::: {style="position: absolute; top: -5%; left: 45%; width: 500px;"}
+![](img/future/design1.png)
+:::
+
+::: {.overview-text-box data-id="aim1-box2" style="text-align: center; background: var(--lab-yellow); color: white; position: absolute; top: 24%; left: 47%; width: 450px; z-index: 1;"}
+[Aim 1: Underlying Genetics]{style="font-size: 23pt;"}
+:::
+
+::: {.overview-text-box data-id="aim2-box2" style="text-align: center; background: gray; color: white; position: absolute; top: 38%; left: 47%; width: 450px; z-index: 1;"}
+[Aim 2: Prediction Model]{style="font-size: 23pt;"}
+:::
+
+::: {data-id="arrow" style="position: absolute; top: 46%; left: 66.75%; width: 35px; height"}
+![](img/future/arrow.png)
+:::
+
+::: {.overview-text-box data-id="future" style="text-align: center; background: #385E9D; color: white; position: absolute; top: 65%; left: 47%; width: 450px; z-index: 1;"}
+[Future Directions]{style="font-size: 23pt;"}
+:::
+
+## [Future directions]{style="color: var(--lab-blue)"} {auto-animate="true"}
+
+::: {.overview-text-box data-id="future" style="background: #385E9D; color: white; position: absolute; top: 13%; left: 0%; width: 1050px; padding: 0.5em; z-index: 1;"}
+
+:::: {.columns style="font-size: 27pt;"}
+
+::: {.column width="33%" .fragment fragment-index=1 .fade-in-then-semi-out}
+Sex-stratified GWAS
+
+![](img/future/future_sex.png){style="width: 300px;"}
+
+:::
+
+:::: {.column width="33%" .fragment fragment-index=2 .fade-in-then-semi-out}
+MHC complex
+
+
+![](img/future/future_hla.png){style="width: 80px;"}
+
+
+::::
+
+::: {.column width="33%" .fragment fragment-index=3 .fade-in-then-semi-out}
+Short-tandem repeats
+
+
+![](img/future/future_str.png){style="width: 250px;"}
+
+:::
+
+
+::::
+
+:::
+
+## [Limitations]{style="color: var(--lab-yellow)"} {auto-animate="true"}
+
+::: {.overview-text-box data-id="future" style="background: #f2ce82; position: absolute; top: 13%; left: 0%; width: 1050px; padding: 0.5em; z-index: 1;"}
+
+:::: {.columns style="font-size: 27pt;"}
+
+::: {.column width="33%" .fragment fragment-index=1 .fade-in-then-semi-out}
+**Sample Population**
+
+::: {style="width: 325px;"}
+![](img/future/canada.png)
+:::
+
+:::
+
+:::: {.column width="33%" .fragment fragment-index=2 .fade-in}
+::: {.fragment fragment-index=4 .semi-fade-out}
+
+**Cross-Sectional Data**
+
+::: {.fragment fragment-index=3 .fade-out style="position: absolute; top: 22%; left: 40%;"}
+![](img/future/clock.png){style="width: 200px;"}
+:::
+
+::: {.fragment fragment-index=3 .fade-in style="position: absolute; top: 30%; left: 33%;"}
+![](img/future/clock_long.png){style="width: 400px;"}
+:::
+
+:::
+::::
+
+::: {.column width="33%" .fragment fragment-index=4 .fade-in-then-semi-out}
+**Cognitive Phenotype**
+
+
+![](img/aim1/CII_table_tests_hl.png){style="width: 250px;"}
+
+:::
+
+
+::::
+
+:::
+
+## [Academic Progress Report]{style="font-size: 35pt;"} {auto-animate="true" data-name="Academics" .scrollable}
+### [Since last meeting]{style="color: gray;"}
+
+
+**Academics**
+
+- IMED 7170 (A+)
+- IMED 7280 (A+)
+
+**Awards**
+
+- CIHR CGS-M
+- 3MT Finalist
+- Outstanding Poster (BMG Research Day)
+
+**Abstracts**
+
+- AAIC (July 2025)
+- MSHRF (June 2025)
+
+**Presentations**
+
+- BMG seminar (March 2025)
+- MHRE lecture: Genetics of Aging (Feb 2025)
+- Centre on Aging: STAR meeting (Nov 2024)
+
+**Committees**
+
+- Event Representative, BMG GSA (since Sept 2024)
+- VP Marketing & Events, HSGSA (since May 2025)
+
+**Volunteering**
+
+- Science Fair Judge (April 2025)
+- School Group Guide, Science Rendezvous (April 2025)
+
+
+
+## [Acknowledgements]{style="font-size: 35pt;"} {auto-animate="true"}
+
+::: {style="position: absolute; top: 6%; left: 5%; width: 950px;"}
+![](img/ack.png)
+:::
+
+## Supp. 1 - ARHL {data-name="Supplementary"}
+### Age-Related Hearing Loss {style="color: gray;"}
+
+::: {.fragment fragment-index='1' .fade-in-then-semi-out}
+Symptoms
+:::
+
+::: {.fragment fragment-index='2' .fade-in-then-semi-out}
+Demographics
+:::
+
+::: {.fragment fragment-index='3' .fade-in}
+Potential Pathologies
+:::
+
+::: {.fragment .fade-in-then-out fragment-index=1 style="position: absolute; top: 50px; left: 450px; width: 525px;"}
+![](img/ear/ear_audiogram.png)
+:::
+
+::: {.fragment fragment-index='2' .fade-in-then-out style="position: absolute; left: 150px; top: 215px; width: 325px; height: auto;"}
+![](img/ear/ear_sex.png){auto-animate-id="ear1"}
+:::
+
+::: {.fragment fragment-index='2' .fade-in-then-out style="position: absolute; left: 475px; top: 220px; width: 275px; height: auto;"}
+![](img/ear/ear_age.png){auto-animate-id="ear2"}
+:::
+
+::: {.fragment fragment-index='2' .fade-in-then-out style="position: absolute; left: 750px; top: 215px; width: 425px; height: auto;"}
+![](img/ear/ear_demo.png){auto-animate-id="ear3"}
+:::
+
+
+::: {.fragment .fade-in fragment-index=3 .dementia-text-box style="text-align: center; background: var(--lab-yellow); color: white; position: absolute; top: 85px; left: 550px; width: 500px; padding: 0.1em;"}
+ENVIRONMENTAL FACTORS
+
+(noise, drug toxicity)
+:::
+
+
+::: {.fragment .fade-in fragment-index=4 .dementia-text-box style="text-align: center;  background: var(--lab-yellow); color: white; position: absolute; top: 245px; left: 550px; width: 500px; padding: 0.1em;"}
+OXIDATIVE STRESS
+:::
+
+::: {.fragment .fade-in fragment-index=5 .dementia-text-box style="text-align: center; background: var(--lab-yellow); color: white; position: absolute; top: 345px; left: 550px; width: 500px; padding: 0.1em;"}
+CHRONIC INFLAMMATION
+:::
+
+::: {.fragment .fade-in fragment-index=6 .dementia-text-box style="text-align: center; background: var(--lab-yellow); color: white; position: absolute; top: 445px; left: 550px; width: 500px; padding: 0.1em;"}
+GENETICS
+:::
+
+
+## Supp. 1 - CLSA Demographics {auto-animate="true"}
+
+::: {.fragment fragment-index=1 .slide-out-to-left style="position: absolute; left: 250px; top: 50px; width: 750px; height: auto;"}
+![](img/aim1/clsa/clsa_age_by_sex.png)
+:::
+
+
+::: {.fragment fragment-index=1 .slide-in-from-right-then-left style="position: absolute; left: 350px; top: 10px; width: 650px; height: auto;"}
+![](img/aim1/clsa/clsa_prov_by_age.png)
+:::
+
+::: {.fragment fragment-index=2 .slide-in-from-right-then-left style="position: absolute; left: 350px; top: 10px; width: 650px; height: auto;"}
+![](img/aim1/clsa/clsa_ed_by_age.png)
+:::
+
+::: {.fragment fragment-index=3 .slide-in-from-right style="position: absolute; left: 350px; top: 10px; width: 650px; height: auto;"}
+![](img/aim1/clsa/clsa_inc_by_age.png)
+:::
+
+
+## Supp. 2 - Initial Analysis
+
+::: {style="position: absolute; top: 150px;"}
+``` {=html}
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;margin:0px auto;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:30px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:30px !important;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-1wig{font-weight:bold;text-align:left;vertical-align:top; font-size:30px !important;}
+.tg .tg-0lax{text-align:left;vertical-align:top; font-size:30px !important;}
+</style>
+<table class="tg"><thead>
+  <tr>
+    <th class="tg-0lax"><span style="font-weight:bold">ARHL Subtype</span></th>
+    <th class="tg-1wig"><span style="font-weight:bold">Coefficient</span>(SE)</th>
+    <th class="tg-0lax"><span style="font-weight:bold">OR (95% CI)</span></th>
+    <th class="tg-0lax"><span style="font-weight:bold">P-value</span></th>
+  </tr></thead>
+<tbody>
+  <tr>
+    <td class="tg-0lax">Metabolic ARHL</td>
+    <td class="tg-0lax">0.017 (0.003)</td>
+    <td class="tg-0lax">1.016 (1.011,1.022)</td>
+    <td class="tg-0lax" style="background:#c3f78c;"><span style="font-weight:bold;">3E-9</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Sensory ARHL</td>
+    <td class="tg-0lax">-0.003 (0.004)</td>
+    <td class="tg-0lax">0.99 (0.988,1.004)</td>
+    <td class="tg-0lax">0.35</td>
+  </tr>
+</tbody>
+
+  <tfoot>
+    <tr>
+      <td colspan="4" style="text-align:left; padding-top: 10px; font-size: 14pt">
+        <strong>Acronyms:</strong> <strong>ARHL</strong> = Age-related Hearing Loss; <strong>SE</strong> = Standard Error; <strong>OR</strong> = Odds Ratio; <strong>CI</strong> = Confidence Interval.
+      </td>
+    </tr>
+</tfoot>
+
+</table>
+  
+```
+:::
+
+## Supp. 3 - Met. HL Gene Information
+
+::: {style="position: absolute; top: 15%;"}
+``` {=html}
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;margin:0px auto;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:22px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:22px !important;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-1wig{font-weight:bold;text-align:left;vertical-align:top; font-size:22px !important;}
+.tg .tg-0lax{text-align:left;vertical-align:top; font-size:22px !important;}
+</style>
+<table class="tg"><thead>
+  <tr>
+    <th class="tg-0lax"><span style="font-weight:bold">Gene</span></th>
+    <th class="tg-1wig"><span style="font-weight:bold">Function</th>
+    <th class="tg-0lax"><span style="font-weight:bold">Details</span></th>
+  </tr></thead>
+<tbody>
+
+  <tr>
+    <td class="tg-0lax"><i>ARHGEF28</i></td>
+    <td class="tg-0lax">Rho-guanine nuclotide exchange factor</td>
+    <td class="tg-0lax">Implicated in motor neuron disease pathogenesis; significantly associated with hearing difficulty.</td>
+  </tr>
+  
+    <tr>
+    <td class="tg-0lax"><i>FUS</i></td>
+    <td class="tg-0lax">RNA-binding protein</td>
+    <td class="tg-0lax">Mislocalizes and forms aggregates (FTD); may maintain homeostasis in SV of inner ear</td>
+  </tr>
+  
+    <tr>
+    <td class="tg-0lax"><i>IPO7</i></td>
+    <td class="tg-0lax">Nuclear import protein</td>
+    <td class="tg-0lax">modulates phase behavior of prion-like proteins (<i>FUS</i> included); linked to inflammatory responses in brain</td>
+  </tr>
+</tbody>
+
+  <tfoot>
+    <tr>
+      <td colspan="3" style="text-align:left; padding-top: 10px; font-size: 20pt">
+        <strong>Acronyms:</strong> <strong>FTD</strong> = Frontotemporal Dementia; <strong>SV</strong> = Stria Vascularis.
+      </td>
+    </tr>
+</tfoot>
+
+</table>
+  
+```
+:::
+
+## Supp. 4 - MR and MTAG assumptions
+
+:::: {.columns style="font-size: 25pt;"}
+
+::: {.column}
+**MR**
+
+- variants are strongly associated with the exposure, and explain a significant portion of the variability
+- variants are independent of confounders affecting both exposure and outcome
+- variants only affect outcome through their impact on the exposure
+:::
+
+::: {.column}
+**MTAG**
+
+- variants influence the traits in a similar way (homogenous effect sizes)
+- small errors or randomness in our estimates don't distort our findings (sampling variance)
+- sample overlap is accurately accounted for (bi-LDSC)
+:::
+
+::::
+
+## Supp. 5 - Other CLSA data
+
+::: {style="width: 900px;"}
+![](img/supp/clsa_biospecimen.png)
+:::
+
+
+## Supp. 6 - CII Associations
+
+
+::: {.fragment fragment-index=1 .slide-in-from-right-then-fade .slow3 style="position: absolute; left: 50%; top: 10%; width: 300px; height: auto;"}
+![](img/dem/dem_lancet.jpg)
+:::
+
+:::: {style="position: absolute; top: 17%;"}
+
+::: {.fragment fragment-index=1 .slide-in-from-bottom-then-top .slow1}
+Vision Loss
+:::
+
+::: {.fragment fragment-index=1 .slide-in-from-bottom-then-top}
+Hypertension
+:::
+
+::: {.fragment fragment-index=1 .slide-in-from-bottom-then-top .slow1}
+Depression
+:::
+
+::: {.fragment fragment-index=1 .slide-in-from-bottom-then-top}
+TBI
+:::
+
+::: {.fragment fragment-index=1 .slide-in-from-bottom-then-top .slow1}
+Diabetes
+:::
+
+::: {.fragment fragment-index=1 .slide-in-from-bottom-then-top}
+Smoking and Alcohol
+:::
+
+::: {.fragment fragment-index=1 .slide-in-from-bottom-then-top .slow2}
+Social Activity
+:::
+
+::::
+
+
+::: {.fragment fragment-index=2 .slide-in-from-left-then-right style="position: absolute; left: 400px; top: 60px; width: 500px; height: auto;"}
+![](img/aim1/table_demo.png)
+:::
+
+::: {.fragment fragment-index=3 .slide-in-from-left-then-right style="position: absolute; left: 38%; top: 9%; width: 400px; height: auto;"}
+![](img/aim1/table_med.png)
+:::
+
+::: {.fragment fragment-index=4 .slide-in-from-left-then-right style="position: absolute; left: 38%; top: 9%; width: 375px; height: auto;"}
+![](img/aim1/table_behav.png)
+:::
+
+## Supp. 7 - GWAS Quality Control
+
+::: {style="position: absolute; left: 5%; top: 10%; width: 500px; height: auto;"}
+![](img/QQ/cii_qq_plot.png)
+:::
+
+::: {style="position: absolute; left: 55%; top: 10%; width: 500px; height: auto;"}
+![](img/QQ/cii_eur_qq_plot.png)
+:::
+
+## Supp. 8 - SBayesRC
+
+::: {.fragment fragment-index=1 .fade-out style="position: absolute; left: 10%; top: 13%; width: 850px; height: auto;"}
+![](img/pgs/pgs.jpg)
+:::
+
+::: {.fragment fragment-index=1 .fade-in style="position: absolute; left: 10%; top: 13%; width: 850px; height: auto;"}
+![](img/pgs/sbayesrc.png)
+:::
+
+::: {.footer}
+[PGS graphic](https://www.physoc.org/magazine-articles/polygenic-scores-and-precision-genetics/)
+:::
